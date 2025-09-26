@@ -1,0 +1,531 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+
+    width: 100%;
+    height: 100%;
+}
+
+.page1{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(235, 246, 250);
+}
+
+.call{
+    height: 5vh;
+    padding-top: 1.5%;
+    font-size: 112%;
+    padding-bottom: 1.5%;
+    text-align: center;
+    color: rgb(228, 233, 237);
+    background-color: rgb(16, 13, 95);
+
+}
+.call p{
+    color: aliceblue;
+}
+
+.mainnav{
+     display: flex;
+     justify-content: space-between;
+     font-size: 210%;
+     padding: 1.5%;
+}
+
+.logo{
+
+    width: 20%;
+}
+.midnav{
+    display: flex;
+    gap: 6%;
+    width: 30%;
+}
+
+.navbtn{
+    display: flex;
+    width: 24%;
+    padding-left: 10%;
+    margin-top: -0.4%;
+    gap: 12%;
+    
+}
+
+.log{
+    
+    width: 100%;
+    padding: 16px 29px;
+    border-radius: 12vh;
+    background-color: rgb(103, 163, 223);
+}
+
+.sign{
+    
+    width: 100%;
+    color: aliceblue;
+    padding: 16px 20px;
+    border-radius: 12vh;
+    background-color: rgb(74, 146, 218);
+}
+
+.mid h1{
+    font-size: 4vw;
+    padding-top: 1%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 900;
+    letter-spacing:.3vw;
+    text-align: center;
+}
+
+.mid p{
+    font-size: 1.2vw;
+    padding-top: 1%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* font-weight: 900; */
+    letter-spacing:.3vw;
+    text-align: center;
+}
+
+.mid h2{
+    font-size: 1.2vw;
+    margin: 4% 44%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 12%;
+    padding: 1%;
+    border-radius: 1vh;
+    /* letter-spacing: .1vw; */
+    font-weight: 800;
+    color: aliceblue;
+    background-color: rgb(60, 116, 206);
+    text-align: center;
+}
+
+
+.img{
+
+    display: flex;
+    justify-content: center;
+    gap: 3%;
+    padding-bottom:5%;
+}
+
+.img img{
+    width: 10vw;
+    height: 15vw;
+
+    border: 2px solid blue;
+}
+
+.im1 img {
+   width: 9vw;
+   height: 13vw;
+   margin: 1vw;
+   
+}
+
+.im3 img {
+   width: 9vw;
+   height: 13vw;
+   margin: 1vw;
+   
+}
+
+
+
+
+
+.page2{
+    width: 100%;
+    height:100vw;
+    background-color: rgb(255, 255, 255);
+}
+
+.p2h{
+    font-size: 3vw;
+    padding: 4%;
+    padding-bottom: 4%;
+    margin-bottom: 4%;
+
+    letter-spacing:  .1vw;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    
+    font-weight:600;
+}
+
+.cards{
+    width: 100%;
+    height :44%;
+    padding-left:8%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 11%;
+    margin-bottom: 0%;
+}
+
+.card1 ,.card2 ,.card3{
+    width: 22%;
+    background-color: rgb(255, 255, 255);
+    height:60%;
+border: 2px solid black;
+}
+
+.card1 ,.card2,.card6{
+    position: relative;
+}
+#res1,#res2,#res6{
+   width: 100%;
+   height : 100%
+}
+
+.btntem1 {
+    position: absolute;
+    bottom: 40px;             /* hidden below the card */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    opacity: 0;
+    height: 10%;
+    padding: 12px;
+    font-size: 170%;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 12vh;
+    border: none;
+    color: #fff;
+    background-color: #3f74d7;
+    text-align: center;
+   
+    /* display: none; */
+    visibility: none;
+}
+
+/* When hover on card, button slides up */
+.card1:hover .btntem1 {
+    bottom: 80px; 
+    opacity: 1;
+     transition: bottom 0.4s ease-in-out; /* smooth slide */
+    cursor: pointer;
+    display: block;        /* visible position */
+}
+
+
+
+
+.btntem2 {
+    position: absolute;
+    bottom: 40px;             /* hidden below the card */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    opacity: 0;
+    height: 10%;
+    padding: 12px;
+    font-size: 170%;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 12vh;
+    border: none;
+    color: #fff;
+    background-color: #3f74d7;
+    text-align: center;
+   
+    /* display: none; */
+    visibility: none;
+}
+
+.card2:hover .btntem2 {
+    bottom: 80px; 
+    opacity: 1;
+     transition: bottom 0.4s ease-in-out; /* smooth slide */
+    cursor: pointer;
+    display: block;        /* visible position */
+}
+
+/* 3rd 
+ */
+
+ .btntem3 {
+    position: absolute;
+    bottom: 520px;             /* hidden below the card */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    opacity: 0;
+    height: 5%;
+    padding: 12px;
+    font-size: 170%;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 12vh;
+    border: none;
+    color: #fff;
+    background-color: #3f74d7;
+    text-align: center;
+   
+    /* display: none; */
+    visibility: none;
+}
+
+.card6:hover .btntem3 {
+    bottom: 560px; 
+    margin-top: -44%;
+
+    opacity: 1;
+     transition: bottom 0.4s ease-in-out; /* smooth slide */
+    cursor: pointer;
+    display: block;        /* visible position */
+}
+
+
+
+
+.page7{
+      width: 100%;
+    height: 100vh;
+    color: antiquewhite;
+    background-color: rgb(35, 70, 133);
+}
+
+.p71{
+    text-align: center;
+    padding-top: 4%;
+
+    
+}
+.p71p1{
+     font-size: 500%;
+     /* color: antiquewhite; */
+     
+}
+
+.p71p2{
+     font-size: 250%;
+     /* color: antiquewhite; */
+}
+
+.p72{
+    display: flex;
+    font-size: 190%;
+    padding-top: 8%;
+    padding-bottom: 2%;
+    gap: 21%;
+    justify-content: space-around;
+}
+
+.p73{
+    display: flex;
+    font-size: 190%;
+    padding-top: 5%;
+    padding-bottom: 2%;
+
+    gap: 31%;
+    justify-content: space-around;
+}
+
+.p74{
+    display: flex;
+    font-size: 190%;
+    padding-top: 8%;
+    padding-bottom: 2%;
+
+    gap: 49%;
+    justify-content: space-around;
+}
+
+
+/* --- Media Query for Mobile Devices (max-width: 768px) --- */
+@media (max-width: 768px) {
+    
+    /* Reset and general adjustments for small screens */
+    html, body {
+        overflow-x: hidden; /* Prevents horizontal scrolling */
+    }
+
+    /* Adjust font sizes for better readability */
+    .call, .call p {
+        font-size: 80%;
+    }
+
+    /* Change main navigation to a vertical layout */
+    .mainnav {
+        flex-direction: column;
+        align-items: center; /* Center items for a cleaner look */
+        font-size: 150%;
+        padding: 4%; /* Increase padding for more space */
+    }
+
+    .logo, .midnav, .navbtn {
+        width: 103%; /* Make each section full-width */
+        justify-content: center; /* Center the navigation links */
+        margin-top: 2%;
+        gap: 2%; /* Reduce gap between nav items */
+    }
+    .logo,.midnav{
+        display:none ;
+    }
+    
+    .navbtn {
+        display: flex;
+    
+        padding-left: 0;
+        margin-top: 10px;
+        flex-direction: row; /* Keep the buttons side-by-side */
+    }
+
+    .log, .sign {
+      width: 29vw;
+      text-align: center;
+      /* padding-left: 4%; */
+      /* display: flex; */
+      font-size: 60%;
+    }
+
+    /* Adjust hero section (mid) content */
+    .mid h1 {
+        font-size: 7vw; /* Larger font for the main heading */
+    }
+
+    .mid p {
+        font-size: 4vw; /* Larger font for the paragraph */
+        padding: 0 5%;
+    }
+
+    .mid h2 {
+        font-size: 4vw;
+        width: 50%; /* Make the button wider */
+        margin: 5% auto; /* Center the button */
+        padding: 3%;
+    }
+    
+    /* Adjust image layout for vertical stacking */
+    .img {
+        /* flex-direction: column; */
+        align-items: center;
+        display: flex;
+        gap: 5%;
+        padding-bottom: 5%;
+    }
+
+    .img img, .im1 img, .im3 img {
+        width: 25vw; /* Make images take up more of the screen */
+        height: auto; /* Maintain aspect ratio */
+        margin: 2vw 0;
+        display: flex;
+        border: none;
+    }
+
+    /* Adjust page 2 card layout */
+    .page2 {
+        height: auto; /* Allow the page height to adjust */
+        padding: 5% 0;
+    }
+
+    .p2h {
+        font-size: 6vw;
+        padding: 5% 0;
+    }
+
+    .cards {
+        flex-direction: column; /* Stack cards vertically */
+        padding: 0 15%;
+        gap: 20px; /* Add some space between cards */
+        height: auto;
+        margin-left: 5%;
+    }
+
+    .card1, .card2, .card3 {
+        width: 90%; /* Make cards nearly full-width */
+        height: auto;
+        margin-bottom: 20px;
+    }
+    #res3{
+        width: 64vw;
+        border: 2px solid black;
+        height: 50%;
+        position: relative;
+    }
+    
+    /* Adjust button positioning on cards for mobile */
+    .btntem1, .btntem2{
+        position: static; /* Change to static for normal flow */
+        width: 80%;
+        margin: 20px auto;
+        opacity: 1; /* Always show the button */
+        transform: none; /* Remove transform */
+        font-size: 120%;
+        padding: 10px;
+    }
+
+    .btntem3{
+      /* Change to static for normal flow */
+        width: 80%;
+        /* margin-top: -500%; */
+        display:none ;
+        /* position: absolute; */
+        height: 10%;
+        overflow: hidden;
+        opacity: 1; /* Always show the button */
+        transform: none; /* Remove transform */
+        font-size: 120%;
+        padding: 10px;
+    }
+    
+    /* Disable hover effects on touch devices */
+    .card1:hover .btntem1,
+    .card2:hover .btntem2{
+        bottom: auto; /* Reset position */
+        opacity: 1;
+        transition: none;
+        display: block;
+    }
+
+    .card6:hover .btntem3{
+        display: none;
+    }
+
+    /* Adjust footer sections for mobile */
+    .page7 {
+        height: auto;
+        padding: 5% 0;
+    }
+
+    .p71p1 {
+        font-size: 5vw;
+    }
+    
+    .p71p2 {
+        padding-top: 3%;
+        font-size: 3vw;
+    }
+
+    .p72, .p73, .p74 {
+        font-size: 55%;
+        flex-direction: column; /* Stack footer links vertically */
+        align-items: center;
+        gap: 20px; /* Space between links */
+        padding: 4% 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

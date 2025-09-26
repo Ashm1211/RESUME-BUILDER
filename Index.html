@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="resume.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <style>
+        /* Basic styling to show/hide forms */
+        .auth-form {
+            display: none;
+            position: absolute;
+            width: 40%;
+            height: 50%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgb(19, 94, 253);
+        text-align: center;
+        color: aliceblue;
+        font-size: 400%;
+        
+
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            z-index: 1000;
+        }
+        .auth-form input, .auth-form button {
+            display: block;
+            margin: 5% 20%;
+            border-radius: 8vh;
+            font-size: 40%;
+            padding-left: 5%;
+        
+            /* margin: rem 0; */
+            width: 60%;
+            height: 10%;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="page1">  
+        <div class="nav">
+            <div class="call">
+              <a href="phone"> 
+                <p>Call us: (+91)  932*5*544</p>
+            </a>
+            </div>
+            <div class="mainnav">
+             <div class="logo">
+                  <p>logo</p>
+             </div>
+             <div class="midnav">
+                <p>Home</p>
+                <p>About us</p>
+                <p>Resumes</p>
+                <p>Selection Criteria</p>
+             </div>
+             <div class="iconmenu">
+                <!-- <i  class="ri-menu-line"></i> -->
+             </div>
+             <div class="navbtn">
+                <div class="log" id="loginBtn">Log in</div>
+                <div class="sign" id="signupBtn">Sign up</div>
+             </div>
+            </div>
+        </div>
+        
+        <div class="mid">
+            <h1>The Resume to get your Dream job</h1>
+            <p>Create an impressive resume in minutes. Free to Download</p>
+            <div>
+                <h2 id="createResumeBtn">Create my Resume</h2>
+            </div>  
+            <div class="img">
+                <div class="im1">
+                    <img src="imges/r5.jpg" alt="">
+                </div>
+                <div class="im2">
+                    <img src="imges/r6.jpg" alt="">
+                </div>
+                <div class="im3">
+                    <img src="imges/r4.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        
+        <div class="page2" id="page2">
+            <p class="p2h">Create a resume to land your next job</p>
+            <div class="cards">
+                <a class="card1" href="temp.html">
+                    <img id="res1" src="imges/Screenshot (144).png" alt="">
+                    <div class="btntem1">Click to use</div>
+                </a>
+                <a class="card2" href="tem2.html">
+                   <img id="res2" src="imges/Screenshot (145).png" alt="">
+                    <div class="btntem2">Click to use</div>
+                </a>
+                <a class="card6" href="tem3.html">
+                   <img id="res3" src="imges/Screenshot (146).png" alt="">
+                    <div class="btntem3">Click to use</div>
+                </a>
+            </div>
+            <div class="page7">
+                <div class="p71">
+                    <p class="p71p1">Resume Builder</p>
+                    <p class="p71p2">Select your template </p>
+                </div>
+                <div class="p73">
+                    <p class="p73p1">Facebook</p>
+                    <p class="p73p1">Instagram</p>
+                    <p class="p73p1">Whats App</p>
+                </div>
+                <hr>
+                <div class="p72">
+                    <p class="p72p1">Chanakya Puri, South Delhi-02</p>
+                    <p class="p72p1">m4324@gmail.com</p>
+                    <p class="p72p1">PH NO. 834834***6</p>
+                </div>
+                <hr>
+                <div class="p74">
+                    <p class="p74p1">Resume Group Media All Rights Reserved </p>
+                    <p class="p74p1">Design & Development by Self</p>
+                </div>
+                <hr>
+            </div>
+        </div>
+    </div>
+
+    <div id="registerForm" class="auth-form">
+        <h2>Sign Up</h2>
+        <input type="text" id="regName" placeholder="Full Name">
+        <input type="email" id="regEmail" placeholder="Email">
+        <input type="password" id="regPassword" placeholder="Password">
+        <button id="registerSubmit">Register</button>
+        <button id="closeRegister">Close</button>
+    </div>
+
+    <div id="loginForm" class="auth-form">
+        <h2>Log In</h2>
+        <input type="email" id="logEmail" placeholder="Email">
+        <input type="password" id="logPassword" placeholder="Password">
+        <button id="loginSubmit">Log In</button>
+        <button id="closeLogin">Close</button>
+    </div>
+
+    <script>
+        document.getElementById("createResumeBtn").addEventListener("click", function() {
+            document.getElementById("page2").scrollIntoView({ behavior: "smooth" });
+        });
+
+        const registerForm = document.getElementById('registerForm');
+        const loginForm = document.getElementById('loginForm');
+
+        document.getElementById('signupBtn').addEventListener('click', () => {
+            registerForm.style.display = 'block';
+        });
+
+        document.getElementById('loginBtn').addEventListener('click', () => {
+            loginForm.style.display = 'block';
+        });
+
+        document.getElementById('closeRegister').addEventListener('click', () => {
+            registerForm.style.display = 'none';
+        });
+
+        document.getElementById('closeLogin').addEventListener('click', () => {
+            loginForm.style.display = 'none';
+        });
+
+        // --- REGISTRATION LOGIC ---
+        document.getElementById('registerSubmit').addEventListener('click', async () => {
+            const name = document.getElementById('regName').value;
+            const email = document.getElementById('regEmail').value;
+            const password = document.getElementById('regPassword').value;
+
+            try {
+                const response = await fetch('http://localhost:3001/api/register', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ full_name: name, email: email, password: password })
+                });
+
+                const data = await response.json();
+                if (response.ok) {
+                    alert(data.message);
+                    registerForm.style.display = 'none';
+                } else {
+                    alert(data.message);
+                }
+            } catch (error) {
+                alert('Connection error. Is the backend server running?');
+            }
+        });
+
+        // --- LOGIN LOGIC ---
+        document.getElementById('loginSubmit').addEventListener('click', async () => {
+            const email = document.getElementById('logEmail').value;
+            const password = document.getElementById('logPassword').value;
+
+            try {
+                const response = await fetch('http://localhost:3001/api/login', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ email: email, password: password })
+                });
+
+                const data = await response.json();
+                if (response.ok) {
+                    alert('Login successful!');
+                    // Store userId in local storage for later use on resume pages
+                    localStorage.setItem('userId', data.userId);
+                    loginForm.style.display = 'none';
+                } else {
+                    alert(data.message);
+                }
+            } catch (error) {
+                alert('Connection error. Is the backend server running?');
+            }
+        });
+    </script>
+</body>
+</html>

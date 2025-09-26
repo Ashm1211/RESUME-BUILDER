@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Miller - CV</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --cv-blue: #304263;
+            --cv-blue-dark: #2a3a5a;
+            --font-family: 'Fira Sans', sans-serif;
+        }
+
+        body {
+            font-family: var(--font-family);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            /* background-color: aquamarine; */
+            min-height: 100vh;
+            flex-direction: column;
+        }
+
+        .container {
+            display: flex;
+            width: 35%;
+            padding-right: 2%;
+            margin-left: 59%;
+            margin-top: 2%;
+            position: fixed;
+            background-color: rgb(240, 239, 238);
+        }
+
+        .left-column {
+            width: 33%;
+            background-color: var(--cv-blue);
+            color: white;
+            padding-top: 5px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .left-column-content {
+            width: 82%;
+            padding: 20px 0;
+            box-sizing: border-box;
+            background-color: var(--cv-blue-dark);
+            height: calc(100% - 5px);
+            display: flex;
+            flex-direction: column;
+            padding-left: 9%;
+            padding-right: 9%;
+        }
+
+        .name {
+            font-size: 1.5em;
+            text-transform: uppercase;
+            font-weight: 300;
+            letter-spacing: 0.1em;
+            margin-bottom: 5px;
+            overflow-wrap:break-word;
+
+        }
+
+        .name b {
+            font-weight: 700;
+        }
+
+        .profile-picture {
+            width: 65%;
+            margin: 10px auto;
+            border-radius: 50%;
+            display: block;
+            border: 2px solid white;
+        }
+
+        .head-left {
+            text-transform: uppercase;
+            font-weight: 700;
+            margin-top: 20px;
+            margin-bottom: 5px;
+            letter-spacing: 0.1em;
+            font-size: 0.9em;
+
+            position: relative;
+        }
+
+ 
+        
+        .head-left::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 1px;
+            background-color: white;
+            margin-top: 5px;
+        }
+
+        .head-left + p, .head-left + ul {
+            margin-top: 5px;
+        }
+
+        .left-column p {
+            font-size: 0.85em;
+            line-height: 1.4;
+            overflow-wrap:break-word;
+        }
+
+        .contact-details {
+            font-size: 0.85em;
+            line-height: 1.5;
+            overflow-wrap:break-word;
+
+        }
+
+        .contact-details span {
+            display: block;
+        }
+
+        .contact-details i {
+            margin-right: 5px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            font-size: 0.85em;
+            overflow-wrap:break-word;
+
+        }
+
+        ul li {
+            margin-bottom: 2px;
+            line-height: 1.4;
+        }
+
+        .right-column {
+            width: 67%;
+            padding-left: 2.5em;
+            padding-top: 2em;
+            box-sizing: border-box;
+        }
+
+        .head-right {
+            color: var(--cv-blue);
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 1.2em;
+            letter-spacing: 0.1em;
+            margin-bottom: 5px;
+            position: relative;
+        }
+
+        .head-right::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 2px;
+            background-color: var(--cv-blue);
+            margin-top: 5px;
+        }
+
+        .experience-item, .education-item, .certification-item, .hobbies-item {
+            margin-bottom: 15px;
+        }
+
+        .job-title, .degree-title {
+            font-weight: 700;
+            font-size: 1.1em;
+            text-transform: uppercase;
+            color: var(--cv-blue);
+        }
+
+         .job-title2, .degree-title {
+            font-weight: 700;
+            font-size: 1.1em;
+            text-transform: uppercase;
+            color: var(--cv-blue);
+        }
+
+        .company, .university {
+            font-style: italic;
+            display: inline-block;
+        }
+
+        .dates {
+            float: right;
+            font-weight: 700;
+        }
+
+        .smaller {
+            font-size: 0.9em;
+            margin-top: 5px;
+        }
+
+        .smaller::before {
+            content: "◆";
+            margin-right: 5px;
+        }
+
+  .form{
+ width: 55%;
+ background-color: #0d47a1;
+ color: #f4f4f4;
+
+ }  
+ 
+ 
+.formall h1{
+    padding-top: 5%; 
+    margin-left: 2%;
+    
+}
+
+.formall h3{
+    padding-top: 5%; 
+    margin-left: 2%;
+    
+}
+
+.formall label {
+    margin-left: 10%;
+    font-size: 170%;
+}
+
+.formall input {
+    margin-left: 2%;
+    font-size: 150%;
+}
+
+#btn{
+  width: 20%;
+  border-radius: 12vh;
+  font-size: 1vw;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+}
+
+.heading{
+    font-size: 343%;
+    font-weight: 700;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.main{
+    padding-top: 5%;
+    padding-left: 5%;
+}
+    
+   @media (max-width: 768px) {
+    body {
+        /* This will allow content to go beyond the viewport width */
+        overflow-x: auto;
+    }
+
+    .container {
+      position: fixed;
+    margin: auto;
+        /* Allow the content to be wider than the screen */
+        width: 150vw; /* You may need to adjust this value */
+        display: flex;
+        flex-direction: row; /* This keeps the columns side-by-side */
+        margin-left: 0;
+        position: static; /* Remove fixed positioning for scrolling */
+    }
+
+    .left-column {
+        width: 50%;
+        min-width: 300px; /* A minimum width to ensure readability */
+    }
+
+    .right-column {
+        width: 100%; /* Or set a fixed width to control the horizontal scroll */
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+    
+  .form{
+ width: 152%;
+ background-color: #0d47a1;
+ color: #f4f4f4;
+
+ }  
+ 
+ 
+/* .formall h1{
+    padding-top: 5%; 
+    margin-left: 2%;
+    
+} */
+
+.formall h3{
+    padding-top: 5%; 
+    margin-left: 2%;
+    
+}
+
+.formall label {
+    margin-left: 10%;
+    font-size: 130%;
+    display: none;
+}
+
+.formall input {
+    margin-left: 2%;
+    font-size: 150%;
+}
+
+#btn{
+  width: 70%;
+  height: 5vh;
+  margin-top: 1234%;
+  position: absolute;
+    margin-left: 44%;
+  border-radius: 12vh;
+  font-size: 4vw;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+}
+
+.heading{
+    font-size: 143%;
+    margin-left: 3%;
+    width: 230%;
+    font-weight: 700;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.main{
+    padding-top: 5%;
+    padding-left: 2%;
+}
+    
+}
+
+
+
+
+    </style>
+</head>
+<body>
+
+
+    <div class="input">
+        <div class="form">
+            
+
+
+                 <div class="main" style="display: flex ;gap: 44%;">
+              <div class="heading">Enter your Details</div>
+              <button id="btn">Download</button>
+        </div>
+
+            <form class="formall" action="">
+
+        <h1>1) Profile Section</h1>
+        <br><br>
+
+        <label for="nameinp">Name</label>
+         <input id="nameinp" type="text" placeholder="Enter your name">
+
+        <br><br><br>
+
+      
+        
+                    <!-- PROFILE -->
+<br><br><br><br><br>
+
+
+   <h1>2) Profile Section</h1>
+
+   <label for="profileUpload">Upload Your Photo:</label>
+<input type="file" id="profileUpload" accept="image/*">
+
+   
+
+<label for="profileInput" ><h3 style="margin-left: 5%;">Profile Bio</h3></label>
+<textarea style="max-width: 60%; width: 50%; height: 15vh ; margin-left:5%; ; font-size: 170%; padding: 1% 1%;" id="profileInput" placeholder="Write your profile..."></textarea>
+
+<!--  -->
+<br><br><br><br>
+  
+
+        <h1>3) Contact Section</h1>
+
+  <!-- contact -->
+<!--    -->
+        <label for="mailinp">Email</label>
+
+         <input id="mailinp" type="text" placeholder="Email">
+        <br><br><br>
+
+         <label for="xinp">Phn No.</label>
+
+         <input id="xinp" type="text" placeholder="phone no.">
+        <br><br><br>
+
+        <label for="linkdininp">Linkdin</label>
+
+         <input id="linkdininp" type="text" placeholder="Linkdin">
+        <br><br><br>
+
+        <br><br> 
+
+  <!-- persnal info  -->
+        <h1>1) Persnal Info. Section</h1>
+        <br><br><br>
+
+         <label for="citizeninp">Citizenship</label>
+         <input id="citizeninp" type="text" placeholder="Citizenship">
+        <br><br><br>
+
+         <label for="familyinp">Family</label>
+         <input id="familyinp" type="text" placeholder="Family Status">
+        <br><br><br>
+
+         <label for="langinp">Languages</label>
+         <input id="langinp" type="text" placeholder="Languages">
+
+        <br><br><br><br><br><br>
+
+<h1>3) Skills Section</h1>
+<br><br>
+  <!-- skills -->
+<!--    -->
+        <label for="skillinp">Skills</label>
+
+         <input id="skillinp" type="text" placeholder="Skills"
+        <br><br><br><br>
+
+
+
+ <!-- done aboe         -->
+
+
+ <!-- experince -->
+
+        <br><br>
+      
+        <h1>4) Experience Section</h1>
+        <br>
+
+ <h3>1) Experience a)</h3>
+<br><br>
+
+         <label for="jt1inp">Role</label>
+
+         <input id="jt1inp" type="text" placeholder="job-title">
+
+<br><br><br><br>
+
+          <label for="cominp">company</label>
+
+         <input id="cominp" type="text" placeholder="company name">
+
+<br><br><br><br>
+
+         
+         <label for="date1inp">Date</label>
+
+         <input id="date1inp" type="text" placeholder="Date">
+        <br><br>
+             
+<br><br>
+          <label for="expInput"><h1 style="font-size: 120%;">Publications</h1></label>
+          <textarea style="max-width: 60%; width: 40% ; height: 10vh; margin-left: 4%; margin-top:2% ;" name="" id="expInput"></textarea>
+        <br><br>
+
+<br><br>
+
+        <!-- education -->
+<br><br>
+<br>
+<br>
+        
+        <h1>1) Education Section</h1>
+
+        <br><br><br>
+
+            <label for="edate2inp">Date</label> 
+          <input id="edate2inp" type="text" placeholder="Date">
+        <br><br><br>
+
+          <label for="eco2inp">Course 1   </label>
+          <input id="eco2inp" type="text" placeholder="Course">
+        <br><br><br>
+
+          <label for="econ2inp">College Name</label>
+          <input id="econ2inp" type="text" placeholder="College Name">
+        <br><br><br>
+<!-- 2nd clg  -->
+        <br><br>
+
+            <label for="edate1inp">Date</label> 
+          <input id="edate1inp" type="text" placeholder="Date">
+        <br><br><br>
+
+          <label for="eco1inp">Course 2</label>
+          <input id="eco1inp" type="text" placeholder="Course">
+        <br><br><br>
+
+          <label for="econ1inp">College Name</label>
+          <input id="econ1inp" type="text" placeholder="College Name">
+        <br><br><br>
+
+<br><br><br>
+<h1>Certification Section</h1>
+        <!-- certificcation  -->
+<br><br><br>
+
+        <!-- 1 -->
+          <label for="cer1inp">Certificate 1</label>
+          <input id="cer1inp" type="text" placeholder="Certificate">
+<br><br><br>
+          
+          <label for="sou1inp">source 1</label>
+          <input id="sou1inp" type="text" placeholder="sourse ">  
+<br><br><br>
+
+
+          <!-- 2 -->
+
+            <label for="cer2inp">Certificate</label>
+          <input id="cer2inp" type="text" placeholder="Certificate">
+<br><br><br>
+          
+          <label for="sou2inp">source </label>
+          <input id="sou2inp" type="text" placeholder="sourse ">  
+          <!-- 3rd  -->
+<br><br><br>
+
+             <label for="cer3inp">Certificate</label>
+          <input id="cer3inp" type="text" placeholder="Certificate">
+<br><br><br>
+          
+       
+<br><br><br>
+
+          <!-- hobiees  -->
+
+          <h1>Hobbies</h1>
+
+<label for="hobinp">Enter your Hobbies</label><br><br>
+<textarea name="" id="hobinp" placeholder="Hobbies"></textarea>
+
+<br><br><br>
+
+            </form>
+           
+        </div>
+    </div>
+
+
+    <!-- temlpate  -->
+    <div class="container">
+        <div class="left-column">
+            <div style="width: 100%; height: 5px; background-color: var(--cv-blue-dark);"></div>
+            <div class="left-column-content">
+                <div class="name" id="nametext">
+                    John <b>Miller</b>
+                </div>
+                <img id="profileImg" src="imges/r5.jpg" alt="Profile Picture">
+
+
+                <div class="head-left">Profile Summary</div>
+             <div  > <p id="profileText" >
+                    Experienced  with over 5+ years of expertise in SQL, Python, Excel, Power BI, Power BI Service, T-SQL, Birt Reporting tool, and Kibana. Proficient in data manipulation, statistical analysis, and data visualization. Skilled in data collection, cleansing, analysis, and creating insightful visual reports to support data-driven decision-making. Strong communicator with a track record of translating complex data into actionable business insights.
+                </p></div>  
+
+                <div class="head-left">Contact details</div>
+                <div class="contact-details">
+                    <span id="mailtext"><i class="fas fa-at"></i> XXXXXXX@gmail.com</span>
+                    <span id="xtext"><i class="fas fa-mobile-alt"></i> +91 00 00 00 00 00</span>
+                    <span id="linkdintext"><i class="fas fa-envelope"></i> XXXXXXXXXXXXX</span>
+                </div>
+
+                <div class="head-left">Personal information</div>
+                <div class="contact-details">
+                    <span>Citizenship: <b id="citizentext">Indian</b></span>
+                    <span>Family: <b id="familytext">Married with children</b></span>
+                    <span>Languages: <b id="langtext">English , Hindi </b> </span>
+                </div>
+
+                <div class="head-left">Skills</div>
+                <ul id="skilltext">
+                    <li>SQL, SSMS, Power BI, Power BI Service, DAX Functions, Tableau, Python, PySpark</li>
+                    <li>Panda, Numpy, Warehouse, Azure Databricks</li>
+                    <li>Microsoft Excel, MS Word, MS PowerPoint</li>
+                    <li>SQL Server, T-SQL, Kibana, Eclipse Birt, ETL</li>
+                    <li>JavaScript, HTML, GitHub</li>
+                    <li>Communication and team collaboration</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="right-column">
+            <div class="head-right">Experience</div>
+            <div class="experience-item">
+                <div class="job-info">
+                    <span class="job-title" id="jt1">Data analyst</span> at <span class="company" ><i id="compname1">XXXX (Hyderabad).</i></span>
+                    <span class="dates" id="date1text">2018.08--2024.05</span>
+                </div>
+                <div class="details" id="expBulletstext">
+                    <div class="smaller">Collected, cleaned, and processed large datasets from multiple sources to ensure data accuracy and integrity.</div>
+
+                    <div class="smaller">Conducted exploratory data analysis to identify patterns, trends, and insights using statistical methods and data visualization techniques to support business decisions.</div>
+                    <div class="smaller">Maintained automated data pipelines for efficient data extraction, transformation, and loading (ETL) processes using SQL and Python.</div>
+                    <div class="smaller">Created interactive dashboards and reports using Power BI, DAX Function and Power BI Service to visualize key performance indicators (KPIs) and communicate findings to stakeholders.</div>
+                       <div class="smaller">Collected, cleaned, and processed large datasets from multiple sources to ensure data accuracy and integrity.</div>
+                    <div class="smaller">Having good experience on T-SQL, Microsoft SQL Server Management Studio. Solid knowledge of database management systems and data warehousing concepts.</div>
+                       <div class="smaller">Collected, cleaned, and processed large datasets from multiple sources to ensure data accuracy and integrity.</div>
+                    <div class="smaller">Having good experience on T-SQL, Microsoft SQL Server Management Studio. Solid knowledge of database management systems and data warehousing concepts.</div>
+
+
+                    
+                  
+                  
+                </div>
+            </div>
+
+         
+                    
+
+
+
+            <div class="head-right">Education</div>
+            <div class="education-item">
+                <span class="degree-title" id="eco2text">Master of Computer Application (MCA).</span> <span class="university"><i>from </i> <i id="econ2text">JNTU Kakinada University.</i></span>
+                <span class="dates" id="edate2text">2012--2015</span>
+            </div>
+            <div class="education-item">
+                <span class="degree-title" id="eco1text">Bachelor of Science in Mathematics, Physics, and Computer Science.</span> <span class="university"><i id="econ1text">Acharya Nagarjuna University.</i></span>
+                <span class="dates" id="edate1text">2007--2010</span>
+            </div>
+
+            <div class="head-right">Certifications</div>
+            <div class="certification-item">
+                <div class="smaller"><span class="degree-title" id="cer1text">Introduction to Data Analysis using Microsoft Excel,</span> <span class="university"><i id="sou1text">Coursera.</i></span></div>
+            </div>
+            <div class="certification-item">
+                <div class="smaller"><span class="degree-title" id="cer2text">Data Analysis With Python,Cognitive Class DA0101EN,</span> <span class="university"><i id="sou2text">provided by IBM.</i></span>
+                    <span class="dates">July-3-2024</span>
+                </div>
+            </div>
+            <div class="certification-item">
+                <div class="smaller"><span class="degree-title" id="cer3text">SQL, Hacker Rank <i id="sou3text">provided by IBM.</i></span></div>
+            </div>
+
+            <div class="head-right">Hobbies</div>
+            <div class="hobbies-item">
+                <i id="hobtext">Listening Music, Playing Cricket</i>
+            </div>
+        </div>
+    </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+
+    <script>
+document.getElementById("btn").addEventListener("click", () => {
+    const resume = document.querySelector(".container");
+    if (!resume) return alert("Resume not found!");
+
+    const opt = {
+        margin: 10,
+        filename: 'resume.pdf',
+        image: { type: 'jpeg', quality: 0.98 },
+        html2canvas: { scale: 2, useCORS: true, scrollY: 0 },
+        jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
+        pagebreak: { mode: ['css', 'legacy'] }
+    };
+
+    // Save original styles
+    const originalPosition = resume.style.position;
+    const originalWidth = resume.style.width;
+    const originalMarginLeft = resume.style.marginLeft;
+
+    // Temporarily adjust for PDF
+    resume.style.position = "static";
+    resume.style.width = "100%";
+    resume.style.marginLeft = "0";
+
+    html2pdf().set(opt).from(resume).save().then(() => {
+        // Restore original styles
+        resume.style.position = originalPosition;
+        resume.style.width = originalWidth;
+        resume.style.marginLeft = originalMarginLeft;
+    });
+});
+
+
+// profile pic 
+
+
+const uploadInput = document.getElementById('profileUpload');
+const profileImg = document.getElementById('profileImg');
+
+uploadInput.addEventListener('change', function() {
+    const file = this.files[0];
+    if (file) {
+        const reader = new FileReader();
+        reader.onload = function(e) {
+            profileImg.src = e.target.result; // replace image
+        }
+        reader.readAsDataURL(file);
+    }
+});
+
+// namev / 
+
+  var inpname=document.getElementById("nameinp");
+  var inptxt=document.getElementById("nametext");
+
+  inpname.oninput=function(){
+    
+    inptxt.textContent=inpname.value;
+
+  }
+// contact 
+
+
+      var mailinp=document.getElementById("mailinp");
+  var mailtext=document.getElementById("mailtext");
+
+  mailinp.oninput=function(){
+    
+    mailtext.textContent=mailinp.value;
+
+  }
+
+
+
+     var xinp=document.getElementById("xinp");
+  var xtext=document.getElementById("xtext");
+
+  xinp.oninput=function(){
+    
+    xtext.textContent=xinp.value;
+
+  }
+
+
+
+     var Linkdininp=document.getElementById("linkdininp");
+  var linkdintext=document.getElementById("linkdintext");
+
+  Linkdininp.oninput=function(){
+    
+    linkdintext.textContent=Linkdininp.value;
+
+  }
+
+    // PROFILE
+  let profileInput = document.getElementById("profileInput");
+  let profileText = document.getElementById("profileText");
+
+  profileInput.oninput = function() {
+    profileText.textContent = profileInput.value || 
+      "Passionate software developer with a focus on building scalable, efficient, and user-friendly applications.";
+  }
+// profile info 
+
+
+     var citizeninp=document.getElementById("citizeninp");
+  var citizentext=document.getElementById("citizentext");
+
+  citizeninp.oninput=function(){
+    
+    citizentext.textContent=citizeninp.value;}
+
+
+     var familyinp=document.getElementById("familyinp");
+  var familytext=document.getElementById("familytext");
+
+  familyinp.oninput=function(){
+    
+    familytext.textContent=familyinp.value;}
+
+
+     var langinp=document.getElementById("langinp");
+  var langtext=document.getElementById("langtext");
+
+  langinp.oninput=function(){
+    
+    langtext.textContent=langinp.value;}
+
+        // skillls 
+
+
+
+         var skillname=document.getElementById("skillinp");
+  var skilltxt=document.getElementById("skilltext");
+
+  skillname.oninput=function(){
+    
+    skillname.oninput = function() {
+  let skills = skillname.value.split(',');
+  skilltxt.innerHTML = skills.map(s => `<li>${s.trim()}</li>`).join('');
+}
+
+
+  }
+
+// eduction 
+      
+   var slinp=document.getElementById("eco2inp");
+  var sltext=document.getElementById( "eco2text");
+  slinp.oninput=function (){
+    sltext.textContent=slinp.value;}
+
+     var sfinp=document.getElementById("econ2inp");
+  var sftext=document.getElementById( "econ2text");
+  sfinp.oninput=function (){
+    sftext.textContent=sfinp.value;}
+
+
+     var stinp=document.getElementById("edate2inp");
+  var sttext=document.getElementById( "edate2text");
+  stinp.oninput=function (){
+    sttext.textContent=stinp.value;}
+
+
+    // 2 educ 
+
+
+     var sl1inp=document.getElementById("eco1inp");
+  var sl1text=document.getElementById( "eco1text");
+  sl1inp.oninput=function (){
+    sl1text.textContent=sl1inp.value;}
+
+     var sf1inp=document.getElementById("econ1inp");
+  var sf2text=document.getElementById( "econ1text");
+  sf1inp.oninput=function (){
+    sf2text.textContent=sf1inp.value;}
+
+
+     var st2inp=document.getElementById("edate1inp");
+  var st2text=document.getElementById( "edate1text");
+  st2inp.oninput=function (){
+    st2text.textContent=st2inp.value;}
+
+
+
+  // Experince
+
+//   exp1 
+// role  
+    var jt1inp=document.getElementById("jt1inp");
+  var jt1text=document.getElementById("jt1");
+
+  jt1inp.oninput=function(){
+    
+    jt1text.textContent=jt1inp.value;
+
+  }
+
+
+// place
+      var compinp=document.getElementById("cominp");
+  var compname1=document.getElementById("compname1");
+
+  compinp.oninput=function(){
+    compname1.textContent=compinp.value;
+
+  }
+
+//   dates 
+
+  var date1inp=document.getElementById("date1inp");
+  var date1text=document.getElementById("date1text");
+
+  date1inp.oninput=function(){
+    date1text.textContent=date1inp.value;
+
+  }
+
+let expBullets1Input = document.getElementById("expInput");
+let expBullets1Text = document.getElementById("expBulletstext");
+
+expBullets1Input.oninput = function () {
+  let lines = expBullets1Input.value.split("\n");
+  expBullets1Text.innerHTML = lines.map(line => `<div class="smaller">◆ ${line}</div>`).join("") 
+    || "<div class='smaller'>◆ Default task 1</div><div class='smaller'>◆ Default task 2</div>";
+};
+
+
+// exp2 
+
+  var jt2inp=document.getElementById("jt2inp");
+  var jt2text=document.getElementById("jt2");
+
+  jt2inp.oninput=function(){
+    
+    jt2text.textContent=jt2inp.value;
+
+  }
+
+
+// place
+      var comp2inp=document.getElementById("comi2np");
+  var comp2name1=document.getElementById("compname2");
+
+  comp2inp.oninput=function(){
+    comp2name1.textContent=comp2inp.value;
+
+  }
+
+//   dates 
+
+  var date2inp=document.getElementById("date2inp");
+  var date2text=document.getElementById("date2text");
+
+  date2inp.oninput=function(){
+    date2text.textContent=date2inp.value;
+
+  }
+
+
+let expBullets2Input = document.getElementById("exp2Input");
+let expBullets2Text = document.getElementById("expBulletstext2");
+
+expBullets2Input.oninput = function () {
+  let lines = expBullets2Input.value.split("\n");
+  expBullets2Text.innerHTML = lines.map(line => `<div class="smaller">◆ ${line}</div>`).join("") 
+    || "<div class='smaller'>◆ Default task 1</div><div class='smaller'>◆ Default task 2</div>";
+};
+
+
+
+
+
+
+// certfication  
+
+// 1
+  var cer1inp=document.getElementById("cer1inp");
+  var cer1text=document.getElementById("cer1text");
+
+  cer1inp.oninput=function(){
+    cer1text.textContent=cer1inp.value;}
+
+    var sou1inp=document.getElementById("sou1inp");
+  var sou1text=document.getElementById("sou1text");
+
+  sou1inp.oninput=function(){
+    sou1text.textContent=sou1inp.value;}
+// 2nd 
+
+ var cer2inp=document.getElementById("cer2inp");
+  var cer2text=document.getElementById("cer2text");
+
+  cer2inp.oninput=function(){
+    cer2text.textContent=cer2inp.value;}
+
+    var sou2inp=document.getElementById("sou2inp");
+  var sou2text=document.getElementById("sou2text");
+
+  sou2inp.oninput=function(){
+    sou2text.textContent=sou2inp.value;}
+
+
+    // 3rd 
+
+     var cer3inp=document.getElementById("cer3inp");
+  var cer3text=document.getElementById("cer3text");
+
+  cer3inp.oninput=function(){
+    cer3text.textContent=cer3inp.value;}
+
+//    hobibiess
+
+   var hobinp=document.getElementById("hobinp");
+  var hobtext=document.getElementById("hobtext");
+
+  hobinp.oninput=function(){
+    hobtext.textContent=hobinp.value;}
+
+
+    </script>
+
+    
+</body>
+</html>

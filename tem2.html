@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curriculum Vitae</title>
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", Arial, sans-serif;
+    }
+
+    body {
+      background: #f4f4f4;
+      padding: 0px;
+    }
+
+    .container {
+      max-width: 900px;
+      width: 35%;
+      height: 90%;
+      margin: 2% 60%;
+      background: #fff;
+      position: fixed;
+      padding: 40px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    /* Header */
+    .cv-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 3px solid #0d47a1;
+      padding-bottom: 15px;
+      margin-bottom: 25px;
+    }
+
+    .left-header h1 {
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .left-header p {
+      margin: 5px 0;
+      font-size: 14px;
+    }
+
+    .left-header a {
+      color: #0d47a1;
+      text-decoration: none;
+    }
+
+    .left-header a:hover {
+      text-decoration: underline;
+    }
+
+    .right-header img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    /* CV Title */
+    .cv-title {
+      text-align: center;
+      margin: 20px 0;
+      font-size: 22px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    /* Sections */
+    .cv-section {
+      margin-bottom: 25px;
+    }
+
+    .cv-section h3 {
+      font-size: 20px;
+      color: #0d47a1;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+    }
+
+    .entry {
+      display: flex;
+      margin-bottom: 12px;
+    }
+
+    .entry .date {
+      flex: 0 0 150px;
+      font-weight: bold;
+      color: #555;
+    }
+
+    .entry .details h4 {
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
+
+    .entry .details p {
+      font-size: 14px;
+      color: #333;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    ul li {
+      font-size: 14px;
+      margin-bottom: 6px;
+    }
+
+
+
+
+    /* form   */
+
+ .form{
+ width: 55%;
+ background-color: #0d47a1;
+ color: #f4f4f4;
+
+ }  
+ 
+ 
+.formall h1{
+    padding-top: 5%; 
+    margin-left: 5%;
+    
+}
+
+.formall label {
+    margin-left: 10%;
+    font-size: 170%;
+}
+
+.formall input {
+    margin-left: 2%;
+    font-size: 150%;
+}
+
+#btn{
+  width: 20%;
+  border-radius: 12vh;
+  font-size: 1vw;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+}
+
+.heading{
+    font-size: 343%;
+    font-weight: 700;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.main{
+    padding-top: 2%;
+    padding-left: 2%;
+}
+
+  </style>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", Arial, sans-serif;
+    }
+
+    body {
+      background: #f4f4f4;
+      padding: 0px;
+    }
+
+    .container {
+      max-width: 900px;
+      width: 35%;
+      height: 90%;
+      margin: 2% 60%;
+      background: #fff;
+      position: fixed;
+      padding: 40px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    /* Header */
+    .cv-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 3px solid #0d47a1;
+      padding-bottom: 15px;
+      margin-bottom: 25px;
+    }
+
+    .left-header h1 {
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .left-header p {
+      margin: 5px 0;
+      font-size: 14px;
+    }
+
+    .left-header a {
+      color: #0d47a1;
+      text-decoration: none;
+    }
+
+    .left-header a:hover {
+      text-decoration: underline;
+    }
+
+    .right-header img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    /* CV Title */
+    .cv-title {
+      text-align: center;
+      margin: 20px 0;
+      font-size: 22px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    /* Sections */
+    .cv-section {
+      margin-bottom: 25px;
+    }
+
+    .cv-section h3 {
+      font-size: 20px;
+      color: #0d47a1;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+    }
+
+    .entry {
+      display: flex;
+      margin-bottom: 12px;
+    }
+
+    .entry .date {
+      flex: 0 0 150px;
+      font-weight: bold;
+      color: #555;
+    }
+
+    .entry .details h4 {
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
+
+    .entry .details p {
+      font-size: 14px;
+      color: #333;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    ul li {
+      font-size: 14px;
+      margin-bottom: 6px;
+    }
+
+
+.input{
+  display: flex;
+}
+
+    /* form   */
+
+ .form{
+ width: 50%;
+ background-color: #0d47a1;
+ color: #f4f4f4;
+
+ }  
+ 
+ 
+.formall h1{
+    padding-top: 5%; 
+    margin-left: 5%;
+    
+}
+
+.formall label {
+    margin-left: 10%;
+    font-size: 170%;
+}
+
+.formall input {
+    margin-left: 2%;
+    font-size: 150%;
+}
+
+#btn{
+  width: 10%;
+  height: 4vh;
+  position: absolute;
+  margin-left: 34%;
+  margin-top: -2%;
+  border-radius: 12vh;
+  font-size: 1vw;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+}
+
+.heading{
+    font-size: 343%;
+    font-weight: 700;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.main{
+    padding-top: 2%;
+    padding-left: 2%;
+}
+
+ /* --- Mobile-first responsive adjustments --- */
+        @media (max-width: 768px) {
+          
+.input{
+  width: 100%;
+}
+          
+
+    .container {
+      position: static;
+      margin: 0;
+
+      width: 100%;
+      height: 100%;
+      /* background-color: aqua; */
+
+    }
+
+    /* Header */
+    .cv-header {
+      width: 100%;
+
+      
+    }
+
+ 
+  
+    /* form   */
+
+ .form{
+ width: 100%;
+
+
+ }  
+ 
+ 
+
+.formall label {
+  display: none;
+  
+}
+
+.formall input {
+  padding-left: 5%;
+    margin-left: 12%;
+    font-size: 150%;
+}
+
+#btn{
+  width: 40%;
+  height: 5vh;
+  border-radius: 12vh;
+  position:absolute;
+  margin-top: 408%;
+  margin-left: 28%;
+  font-size: 4vw;}
+ 
+
+.heading{
+    font-size: 343%;
+    font-weight: 700;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.main{
+    padding-top: 2%;
+    padding-left: 2%;
+}
+
+        }
+  </style>
+
+
+</head>
+
+
+<body>
+
+  <div class="input" >
+    <div class="form" >
+
+
+        <div class="main" style="gap: 44%;">
+              <div class="heading">Enter your Details</div>
+              <button id="btn">Download</button>
+        </div>
+
+
+
+        <form  class="formall" action="">
+        <h1>1) Profile Section</h1>
+        <br><br><br>
+
+        <label for="nameinp">Name</label>
+         <input id="nameinp" type="text" placeholder="Name">
+
+        <br><br><br>
+
+
+        <label for="degreeinp">Degree</label>
+
+         <input id="degreeinp" type="text" placeholder="Degree">
+
+        <br><br><br>
+         
+        <label for="mailinp">Email</label>
+
+         <input id="mailinp" type="text" placeholder="Mail">
+        <br><br><br>
+
+         <label for="xinp">Twitter</label>
+
+         <input id="xinp" type="text" placeholder="Twitter">
+        <br><br><br>
+
+        <label for="linkdininp">Linkdin</label>
+
+         <input id="linkdininp" type="text" placeholder="Linkdin">
+        <br><br><br>
+
+
+        <label for="portinp">Portfolio</label>
+
+         <input id="portinp" type="text" placeholder="Portfolio">
+        <br><br>
+
+<!-- profile  -->
+
+<label for="profileUpload">Upload Your Photo:</label>
+<input type="file" id="profileUpload" accept="image/*">
+
+
+         <!-- employment  -->
+        <br><br>
+
+        <h1>2) Employment Section</h1>
+        <br><br>
+
+          <label for="date1inp">Date</label> 
+          <input id="date1inp" type="text" placeholder="Date">
+        <br><br><br>
+
+          <label for="poinp">Position</label>
+          <input id="poinp" type="text" placeholder="Positon">
+        <br><br><br>
+
+         <label for="pod1inp">Work Detail</label>
+          <input id="pod1inp" type="text" placeholder="Positon">
+
+        <br><br><br>
+
+           <label for="date2inp">Date</label> 
+          <input id="date2inp" type="text" placeholder="Date">
+        <br><br><br>
+
+          <label for="po2inp">Positon</label>
+          <input id="po2inp" type="text" placeholder="Positon">
+        <br><br><br>
+
+          <label for="pod2inp">Work Details</label>
+          <input id="pod2inp" type="text" placeholder="Positon">
+        <br><br><br>
+
+
+          <!-- Education -->
+        <br><br>
+
+        <h1>3) Education Section</h1>
+
+        <br><br>
+
+            <label for="edate1inp">Date</label> 
+          <input id="edate1inp" type="text" placeholder="Date">
+        <br><br><br>
+
+          <label for="epoinp">Positon</label>
+          <input id="epoinp" type="text" placeholder="Positon">
+        <br><br><br>
+
+          <label for="epod1inp">Work Details</label>
+          <input id="epod1inp" type="text" placeholder="summary">
+        <br><br><br>
+
+<!-- publication -->
+
+        <br><br>
+      
+        <h1>4) Publications Section</h1>
+        <br><br>
+
+
+          <label for="exp2Bullets2Input"><h1 style="font-size: 120%;">Publications</h1></label>
+          <textarea style="max-width: 60%; width: 40% ; height: 10vh; margin-left: 10%; margin-top:2% ;" name="" id="exp2Bullets2Input" placeholder="Publications"></textarea>
+        <br><br>
+
+         <!-- skillls  -->
+        <h1>5) Skills Section</h1>
+        <br><br><br>
+
+         <label for="slinp">Languages</label>
+         <input id="slinp" type="text" placeholder="Languages">
+        <br><br><br>
+
+         <label for="sfinp">Frameworks</label>
+         <input id="sfinp" type="text" placeholder="Frameworks">
+        <br><br><br>
+
+         <label for="stinp">Tools</label>
+         <input id="stinp" type="text" placeholder="tools">
+
+        <br><br>
+
+
+         <!-- Miscellaneous -->
+        <br><br>
+
+        <h1>1) Miscellaneous Section</h1>
+        <br><br>
+
+           <label for="mrinp">Details</label>
+         <input id="mrinp" type="text" placeholder="Details">
+        <br><br>
+
+         <!-- referees -->
+        <h1>1) Referees Section</h1>
+        <br><br>
+          
+ <label for="rrinp">Details</label>
+         <input id="rrinp" type="text" placeholder="Details">
+        <br><br>
+        <br><br>
+<br><br><br><br><br><br><br>
+        
+
+        </form>
+    </div>
+
+
+
+
+
+  <div class="container">
+
+    <!-- Header -->
+    <header class="cv-header">
+      <div class="left-header">
+        <h1  > <span id="nametext">Your Name Here</span>,<span id="degreetext">Ph.D</span></h1>
+
+
+        <p><i class="fa-regular fa-envelope"></i> <a  id="mailtext" href="mailto:example@gmail.com">example@gmail.com</a></p>
+        
+        <p><i class="fa-brands fa-x-twitter"></i> <a id="xtext"  href="https://x.com/overleaf_example">@overleaf_example</a></p>
+
+
+        <p><i class="fa-brands fa-linkedin"></i> <a id="linkdintext"  href="http://www.linkedin.com/in/example/">linkedin.com/in/example</a></p>
+
+        <p><i class="fa-solid fa-globe"></i> <a id="porttext"  href="http://example.example.org/">example.example.org</a></p>
+      </div>
+      <div class="right-header">
+        <img id="profileImg" src="photo.jpg" alt="Profile Photo">
+      </div>
+    </header>
+
+    <!-- Title -->
+    <h2 class="cv-title">Curriculum</h2>
+
+    <!-- Employment -->
+    <section class="cv-section">
+      <h3>Employment</h3>
+      <div class="entry">
+        <span class="date" id="date1text">2020 – Present</span>
+        <div class="details">
+          <h4 id="potext">Assistant Professor, University of Example</h4>
+          <p id="pod1text">Research in distributed systems, mentoring graduate students.</p>
+        </div>
+      </div>
+      <div class="entry">
+        <span class="date" id="date2text">2015 – 2020</span>
+        <div class="details">
+          <h4 id="po2text">Research Fellow, Institute of Example</h4>
+          <p id="pod2text">Worked on algorithms and optimization projects funded by industry.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section class="cv-section">
+      <h3>Education</h3>
+      <div class="entry">
+        <span class="date" id="edate1text"
+        >2012 – 2015</span>
+        <div class="details">
+          <h4 id="epotext">Ph.D. in Computer Science, Example University</h4>
+          <p id="epod1text">Thesis: Efficient Algorithms for Graph Analysis</p></div>
+
+      </div>
+    </section>
+
+    <!-- Publications -->
+    <section class="cv-section">
+      <h3 >Publications</h3>
+      <ul>
+        <li id="exp2Bullets2">“Efficient Algorithms for Graph Analysis”, IJCA, 2022</li>
+        
+      </ul>
+    </section>
+
+    <!-- Skills -->
+    <section class="cv-section">
+      <h3>Skills</h3>
+      <p><strong>Languages:</strong> <span id="sltext">Python, Java, C++</span> </p>
+      <p><strong>Frameworks:</strong> <span id="sftext">React, Flask, Django</span> </p>
+      <p><strong>Tools:</strong> <span id="sttext">Git, Docker, Kubernetes</span> </p>
+    </section>
+
+    <!-- Misc -->
+    <section class="cv-section">
+      <h3>Miscellaneous</h3>
+      <p id="mrtext">Reviewer for IEEE Transactions on Computers</p>
+    </section>
+
+    <!-- Referees -->
+    <section class="cv-section">
+      <h3>Referees</h3>
+      <p id="rrtext">Available upon request.</p>
+    </section>
+
+
+
+
+
+
+  </div>
+    </div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+  <script>
+
+document.getElementById("btn").addEventListener("click", () => {
+  const resume = document.querySelector(".container");
+
+  if (!resume) {
+    alert("Resume not found!");
+    return;
+  }
+
+  const clone = resume.cloneNode(true);
+  clone.style.position = "relative";  
+  clone.style.right = "auto";
+  clone.style.top = "auto";
+  clone.style.bottom = "auto";
+  clone.style.margin = "8% -5%";
+  clone.style.boxShadow = "none";
+  clone.style.width = "210mm";   // force A4 width
+  clone.style.minHeight = "297mm";
+
+  document.body.appendChild(clone);
+
+  const opt = {
+    margin:       [-4,10,10,10],
+    filename:     'resume.pdf',
+    image:        { type: 'jpeg', quality: 0.98 },
+    html2canvas:  { scale: 1, useCORS: true, scrollY: 0 },
+    jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' },
+    pagebreak:    { mode: ['css', 'legacy'] }   // ✅ fix cutoff
+  };
+
+  html2pdf().set(opt).from(clone).save().then(() => {
+    document.body.removeChild(clone);
+  });
+});
+
+
+// profile picutre 
+
+
+const uploadInput = document.getElementById('profileUpload');
+const profileImg = document.getElementById('profileImg');
+
+uploadInput.addEventListener('change', function() {
+    const file = this.files[0];
+    if (file) {
+        const reader = new FileReader();
+        reader.onload = function(e) {
+            profileImg.src = e.target.result; // replace image
+        }
+        reader.readAsDataURL(file);
+    }
+});
+
+
+
+  var inpname=document.getElementById("nameinp");
+  var inptxt=document.getElementById("nametext");
+
+  inpname.oninput=function(){
+    
+    inptxt.textContent=inpname.value;
+
+  }
+
+    var degreeinp=document.getElementById("degreeinp");
+  var degreetxt=document.getElementById("degreetext");
+
+  degreeinp.oninput=function(){
+    
+    degreetxt.textContent=degreeinp.value;
+
+  }
+
+      var mailinp=document.getElementById("mailinp");
+  var mailtext=document.getElementById("mailtext");
+
+  mailinp.oninput=function(){
+    
+    mailtext.textContent=mailinp.value;
+
+  }
+
+
+
+     var xinp=document.getElementById("xinp");
+  var xtext=document.getElementById("xtext");
+
+  xinp.oninput=function(){
+    
+    xtext.textContent=xinp.value;
+
+  }
+
+
+
+     var Linkdininp=document.getElementById("linkdininp");
+  var linkdintext=document.getElementById("linkdintext");
+
+  Linkdininp.oninput=function(){
+    
+    linkdintext.textContent=Linkdininp.value;
+
+  }
+
+
+
+     var mailinp=document.getElementById("mailinp");
+  var mailtext=document.getElementById("mailtext");
+
+  mailinp.oninput=function(){
+    
+    mailtext.textContent=mailinp.value;
+
+  }
+
+
+
+     var portinp=document.getElementById("portinp");
+  var porttext=document.getElementById("porttext");
+
+  portinp.oninput=function(){
+    
+    porttext.textContent=portinp.value;
+
+  }
+
+// employment
+
+
+  var date1inp=document.getElementById("date1inp");
+  var date1text=document.getElementById("date1text");
+
+  date1inp.oninput=function(){
+    
+    date1text.textContent=date1inp.value;}
+
+  var poinp=document.getElementById("poinp");
+  var potext=document.getElementById( "potext");
+  poinp.oninput=function (){
+    potext.textContent=poinp.value;}
+
+
+     var pod1inp=document.getElementById("pod1inp");
+  var pod1text=document.getElementById( "pod1text");
+  pod1inp.oninput=function (){
+    pod1text.textContent=pod1inp.value;}
+
+
+
+
+
+      var date2inp=document.getElementById("date2inp");
+  var date2text=document.getElementById("date2text");
+
+  date2inp.oninput=function(){
+    
+    date2text.textContent=date2inp.value;}
+
+  var po2inp=document.getElementById("po2inp");
+  var po2text=document.getElementById( "po2text");
+  po2inp.oninput=function (){
+    po2text.textContent=po2inp.value;}
+
+
+     var pod2inp=document.getElementById("pod2inp");
+  var pod2text=document.getElementById( "pod2text");
+  pod2inp.oninput=function (){
+    pod2text.textContent=pod2inp.value;}
+
+
+    // education
+
+
+
+      var edate1inp=document.getElementById("edate1inp");
+  var edate1text=document.getElementById("edate1text");
+
+  edate1inp.oninput=function(){
+    
+    edate1text.textContent=edate1inp.value;}
+
+  var epoinp=document.getElementById("epoinp");
+  var epotext=document.getElementById( "epotext");
+  epoinp.oninput=function (){
+    epotext.textContent=epoinp.value;}
+
+
+     var epod1inp=document.getElementById("epod1inp");
+  var epod1text=document.getElementById( "epod1text");
+  epod1inp.oninput=function (){
+    epod1text.textContent=epod1inp.value;}
+
+// publication
+
+
+
+let expBullets2Input = document.getElementById("exp2Bullets2Input");
+let exp2Bullets2 = document.getElementById("exp2Bullets2"); // FIXED
+expBullets2Input.oninput = function() {
+  let lines = expBullets2Input.value.split("\n");
+  exp2Bullets2.innerHTML = lines.map(line => `<li>${line}</li>`).join("") 
+    || "<li>Optimized API response times by 40%</li><li>Built internal dashboards with React.js</li><li>Automated CI/CD pipelines</li>";
+}
+
+// skillls 
+     
+   var slinp=document.getElementById("slinp");
+  var sltext=document.getElementById( "sltext");
+  slinp.oninput=function (){
+    sltext.textContent=slinp.value;}
+
+     var sfinp=document.getElementById("sfinp");
+  var sftext=document.getElementById( "sftext");
+  sfinp.oninput=function (){
+    sftext.textContent=sfinp.value;}
+
+
+     var stinp=document.getElementById("stinp");
+  var sttext=document.getElementById( "sttext");
+  stinp.oninput=function (){
+    sttext.textContent=stinp.value;}
+
+    // misclenious
+
+     var mrinp=document.getElementById("mrinp");
+  var mrtext=document.getElementById( "mrtext");
+  mrinp.oninput=function (){
+    mrtext.textContent=mrinp.value;}
+
+
+// referees
+         var rrinp=document.getElementById("rrinp");
+  var rrtext=document.getElementById( "rrtext");
+  rrinp.oninput=function (){
+    rrtext.textContent=rrinp.value;}
+
+  </script>
+</body>
+</html>

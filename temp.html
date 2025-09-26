@@ -1,0 +1,864 @@
+<!doctype html> 
+
+<html lang="en">
+    
+<head> 
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/> 
+<title>Resume Template</title> 
+<style> 
+body { font-family: "Segoe UI", Arial, sans-serif; 
+margin: 0; background: #f4f4f4; padding: 0px; }
+
+/* .paper 
+{  background: #fff;
+   width: 800px; 
+   height: 100%;
+   margin-left: -40%;
+   padding: 50px 60px; 
+   box-shadow: 0 2px 8px rgba(0,0,0,0.1); }  */
+
+
+.paper {
+  background: #fff;
+  width: 230mm;           /* exact A4 width */
+  min-height: 297mm;      /* A4 height */
+  padding: 15mm 12mm;     /* balanced padding (top/bottom, left/right) */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  position: fixed;        /* screen preview stays visible */
+  right: 5%;
+  top: 0;
+  bottom: 0;
+  overflow-y: auto;
+  box-sizing: border-box; /* ensures padding doesn't expand width */
+}
+
+
+
+header { text-align: center; margin-bottom: 10px; } 
+
+
+header h1 { margin: 0; font-size: 28px; font-weight: 700; } 
+
+.contact { margin-top: 2px; font-size: 13px; color: #444; } .contact a,
+
+.contact span { margin: 0 2px; color: #444; text-decoration: none; } h2.section-title { font-size: 23px; border-bottom: 2px solid #ccc; margin-top: 26px; 
+margin-bottom: 12px; padding-bottom: 4px; 
+font-weight: 600; color: #222; } 
+
+.twocol-entry { display: flex; margin-bottom: 14px; } 
+.date-col { flex: 0 0 150px; font-size: 13px; 
+color: #555; } .content-col { flex: 1; } 
+
+
+.content-col h3 { margin: 0 0 6px; font-size: 13px; 
+font-weight: 600; color: #111; } 
+ul { margin: 0; padding-left: 18px; font-size: 15px; } 
+ul li { margin-bottom: 4px; } 
+p { font-size: 14px; margin: 6px 0; } 
+a { color: #1a73e8; text-decoration: none; } 
+a:hover { text-decoration: underline; } 
+/* editor */ 
+.for input{ font-size: 130%; margin-left: 6%; } 
+.for label{ font-size: 120%; } 
+
+/* form    */
+
+.editor{
+   width:54%; height: 100%;
+    background-color: #1a73e8;
+}
+.form label{
+  padding:0% 10% ;
+  color: #fff;
+  font-size: 140%;
+}
+
+.form input{
+  width: 30%;
+  height: 4vh;
+  font-size: large;
+  text-align: start;
+  padding-left: 2%;
+
+}
+
+.form h1{
+  padding-left: 4%;
+  padding-top: 1%;
+
+}
+
+
+input, textarea {
+  border-radius: 10px;   /* rounded corners */
+  border: 1px solid #ccc;  /* light border */
+  padding: 8px;          /* space inside */
+  font-size: 14px;       /* text size */
+  outline: none;         /* remove default blue outline */
+}
+
+input:focus, textarea:focus {
+  border-color: #1a73e8;   /* highlight border when typing */
+  box-shadow: 0 0 5px rgba(0, 12, 28, 0.5); /* glow effect */
+}
+
+#btn{
+  width: 20%;
+  border-radius: 12vh;
+  height: 5vh;
+  margin-top: 2%;
+  font-size: 1vw;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+}
+
+.head1 h1{
+  font-size: 300%;
+}
+
+
+
+@media (max-width: 768px) {
+
+
+.main{
+width: 100%;
+}
+
+.paper {
+  width: 100%;        
+  position: static;
+  height: 100vw; 
+  margin-top: 3%;  /* exact A4 width */
+}
+.editor{
+   width:100%; height: 100%;
+    background-color: #1a73e8;
+}
+
+
+/* editor */ 
+
+
+.for input{ font-size: 130%; margin-left: 2%; } 
+.for label{ font-size: 120%; } 
+
+/* form    */
+
+
+.form label{
+  display: none;
+}
+
+.form input{
+  width: 30%;
+  height: 2vh;
+  margin-left: 5%;
+  
+
+}
+
+.form h1{
+  padding-left: 4%;
+  padding-top: 1%;
+
+}
+
+
+input, textarea {
+  border-radius: 10px;   /* rounded corners */
+  border: 1px solid #ccc;  /* light border */
+  padding: 8px;          /* space inside */
+  font-size: 14px;       /* text size */
+  outline: none;
+  margin-left: 5%;         /* remove default blue outline */
+}
+
+input:focus, textarea:focus {
+  border-color: #1a73e8;   /* highlight border when typing */
+  box-shadow: 0 0 5px rgba(0, 12, 28, 0.5); /* glow effect */
+}
+
+#btn{
+  width: 20%;
+  height: 3vh;
+  font-size: 120%;
+  border-radius: 12vh;
+  margin-top: 3%;
+ 
+
+}}
+.head1{
+width: 100%;
+margin-top: -2%;
+}
+
+
+</style> 
+
+</head>
+ <body>
+    
+    <div class="main" >
+
+      
+        <div class="editor">
+            <div class="form"  >
+
+              <!-- heading -->
+
+          <div class="head" style="display: flex; justify-content: space-between; padding: 2% 2%;"> 
+            
+            <div class="head1" style="color: #fff; font-weight: bold;"><h1>Enter your Details</h1></div>
+
+
+            <button id="btn">Download</button>
+
+        
+          </div>
+
+<!-- form  -->
+
+
+                <form action="" class="form" style="padding-top:-6%; color: #f4f4f4 ;gap: 4%; padding-left: 4%;">
+<br><br><br>
+   <h1>1) Header Section</h1><br><br>
+
+
+                    <label for="name">Name</label> 
+                    <input id="nameInput" type="text" placeholder="Name"> 
+                    <br><br><br> 
+                    <label for="name">Location</label> 
+                    <input id="locationInput" type="text" placeholder="Location"> 
+                    
+                    <br><br><br> 
+                    <label for="name">phone no.</label> 
+                    
+                    <input id="phoneInput" type="text" placeholder="phone no."> 
+                    
+                    <br><br><br> 
+                    
+                    <label for="name">Email</label> 
+                    <input id="emailInput" type="text" placeholder="Email"> 
+                    
+                    <br><br><br> 
+                    
+                    <label for="name">Linkdin</label> 
+                    
+                    <input id="linkedinInput" type="text" placeholder="Linkdin"> 
+                    
+                    <br><br><br> 
+                    
+                    <label for="name">Github</label> 
+                    
+                    <input id="githubInput" type="text" placeholder="Github"> 
+                    
+                    <!-- <input type="submit" name="" id=""> -->
+                    
+
+
+                    <!-- prodiflr -->
+
+                    <!-- PROFILE -->
+<br><br><br><br><br>
+
+<hr>
+   <h1>2) Profile Section</h1>
+   
+
+<label for="profileInput" ><h3 style="margin-left: 5%;">Profile Bio</h3></label>
+<textarea style="max-width: 70%; width: 60%; height: 9vh;max-height: 18vh; font-size: 170%; padding: 1% 1%;" id="profileInput" placeholder="Write your profile..."></textarea>
+
+<!--  -->
+<br><br><br><br>
+<hr>  
+
+
+   <h1>3) Education Section</h1>
+<br><br>
+<!-- EDUCATION -->
+ <label for="eduDateInput" style="font-size: 160%;">  Date</label>
+<input id="eduDateInput" type="text" placeholder="2019 – 2023">
+<br><br><br>
+ <label for="eduTitleInput" style="font-size: 160%;">College</label>
+
+<input id="eduTitleInput" type="text" placeholder="B.Tech in Computer Science, Delhi Institute of Technology">
+<br><br><br>
+ <label for="eduGPAInput" style="font-size: 160%;">CGPA</label>
+
+<input id="eduGPAInput" type="text" placeholder="GPA: 8.6/10">
+<br><br><br>
+ <label for="eduCoursesInput" style="font-size: 160%;">Course Work</label>
+
+<input id="eduCoursesInput" type="text" placeholder="Coursework: Data Structures, Machine Learning, etc.">
+
+<!-- EXPERIENCE -->
+<br><br><br>
+
+<hr>
+
+   <h1>4) EXPERIENCE Section</h1>
+
+<br>
+
+<h1 style="padding-left: 4%;">Experience 1</h1>
+<br><br>
+ <label for="expDate1Input" style="font-size: 160%;">Date</label>
+
+<input id="expDate1Input" type="text" placeholder="2023 – Present">
+<br><br><br>
+
+
+ <label for="expTitle1Input" style="font-size: 160%;">Position</label>
+
+<input id="expTitle1Input" type="text" placeholder="Software Engineer — Google, Bangalore">
+
+
+ <br><br>
+<label for="expBullets1Input"><h2 style="padding-left: 4%;">Works</h2></label>
+<textarea style="max-width: 70%; width: 60%; height: 9vh;max-height: 18vh; font-size: 170%; padding: 1% 1%;" id="expBullets1Input" placeholder="Write your work
+• Optimized API response times by 40%"></textarea>
+
+
+<h1 style="padding-left: 4%;">Experience 2</h1>
+
+ <label for="exp2Date2Input" style="font-size: 160%;">Date</label>
+
+<input id="exp2Date2Input" type="text" placeholder="2023 – Present">
+<br><br><br>
+
+
+ <label for="exp2Title2Input" style="font-size: 160%;">Position</label>
+
+<input id="exp2Title2Input" type="text" placeholder="Software Engineer —Infocis">
+
+
+ <br><br>
+<label for="exp2Bullets2Input"><h2 style="padding-left: 4%;">Works</h2></label>
+<textarea style="max-width: 70%; width: 60%; height: 9vh;max-height: 18vh; font-size: 170%; padding: 1% 1%;" id="exp2Bullets2Input" placeholder="Write your work
+• Designed reusable UI components in Angular
+Improved load times by 30%"></textarea>
+
+<br><br><br><br><br><br>
+
+<hr>
+<br><br>
+<br>
+
+<!-- projecr s -->
+   <h1>4) Projcts Section</h1>
+<br><br>
+
+
+<!-- 1st -->
+<label for="name1inp">Project (1)</label>
+
+<input type="text" id="name1inp" placeholder="Project name">
+<br><br>
+<label for="namef1inp">Features</label>
+<input type="text" id="namef1inp" placeholder="used languages or feature">
+
+
+<br><br><br>
+
+
+<!-- 2nd -->
+<label for="name2inp">Project (2)</label>
+<input type="text" id="name2inp" placeholder="Project name">
+<br><br>
+
+<label for="namef2inp">Features</label>
+<input type="text" id="namef2inp" placeholder="used languages or feature">
+
+<br><br><br>
+<!-- 3rd -->
+<label for="name4inp">Project (3)</label>
+<input type="text" id="name3inp" placeholder="Project name">
+
+<br><br>
+
+<label for="namef3inp">Features</label>
+<input type="text" id="namef3inp" placeholder="used languages or feature">
+
+<br><br><br>
+<!-- 4th -->
+<label for="name4inp">Project (4)</label>
+<input type="text" id="name4inp" placeholder="Project name">
+
+<br><br>
+
+<label for="namef4inp">Features</label>
+<input type="text" id="namef4inp" placeholder="used languages or feature">
+
+<br><br><br><br><br>
+<hr>
+<br><br>
+
+<!-- Publications Section -->
+
+   <h1>5) Publications Section</h1>
+<label for="pubInput"><h2 style="padding-left: 5%;">Write Below</h2></label>
+<textarea style="max-width: 70%; width: 60%; height: 9vh;max-height: 18vh; font-size: 170%; padding: 1% 1%;" id="pubInput" placeholder="
+• Efficient Algorithms for Graph Analysis”, IJCA, 2022
+“AI in Healthcare: Opportunities and Challenges”, IEEE Conf, 2021"></textarea>
+
+
+<br><br><br>
+
+<hr>
+<br><br><br>
+<!-- skillls -->
+   <h1>6) Skills Section</h1>
+
+<label for="skillLangInput">Languages</label>
+<input type="text" id="skillLangInput" placeholder="Languages">
+
+<br><br>
+<label for="frameinp">Frameworks</label>
+<input type="text" name="" id="frameinp " placeholder="Frameworks">
+
+<br><br>
+
+
+<label for="toolinp">Tools</label>
+<input type="text" name="" id="toolinp" placeholder="Tools">
+
+<br><br><br>
+
+
+
+                
+                </form> 
+            
+            
+            </div>
+        
+        </div>
+        
+        
+        <div class="temp">
+    
+            <div class="paper" >
+                
+                <!-- Header --> <header>
+                  
+                  <h1 id="nameText">Alex Johnson</h1> 
+                  
+                  <div class="contact">
+                    <span id="locationText">New Delhi, India</span> | <a id="emailText" href="mailto:alex.johnson@email.com">alex.johnson@email.com</a> 
+                    | <span id="phoneText">+91 98765 43210</span> | <a id="websiteText" href="https://alexjohnson.dev">alexjohnson.dev</a> | <a id="linkedinText" href="https://linkedin.com/in/alexjohnson">linkedin.com/in/alexjohnson</a> | <a id="githubText" href="https://github.com/alexjohnson">github.com/alexjohnson</a> </div> </header> <!-- Profile --> <section> <h2 class="section-title">Profile</h2> <p id="profileText">Passionate software developer with a focus on building scalable, efficient, and user-friendly applications. Strong background in problem solving, algorithms, and real-world project delivery.</p> </section>
+        
+        <!-- Education --> <section> <h2 class="section-title">Education</h2>
+            
+            <div class="twocol-entry"> <div class="date-col"><span id="eduDate1">2019 – 2023</span></div> <div class="content-col"> <h3 id="eduTitle1">B.Tech in Computer Science, Delhi Institute of Technology</h3> <ul> <li id="eduGPA">GPA: 8.6/10</li> <li id="eduCourses">Coursework: Data Structures, Machine Learning, Computer Networks, OS</li> </ul> </div> </div> </section> 
+         
+        <!-- Experience --> <section> <h2 class="section-title">Experience</h2> <div class="twocol-entry"> <div class="date-col"><span id="expDate1">2023 – Present</span></div> <div class="content-col"> <h3 id="expTitle1">Software Engineer — Google, Bangalore</h3> <ul id="expBullets1"> <li>Optimized API response times by 40%</li> <li>Built internal dashboards with React.js</li> <li>Automated CI/CD pipelines</li> </ul> </div> </div> 
+            
+            <div class="twocol-entry"> <div class="date-col"><span id="exp2Date2">Summer 2022</span></div> <div class="content-col"> <h3 id="exp2Title2">Software Engineer Intern — Infosys, Pune</h3> <ul id="exp2Bullets2"> <li>Designed reusable UI components in Angular</li> <li>Improved load times by 30%</li> <li>Increased test coverage from 65% to 90%</li> </ul> </div> </div> </section>
+  
+            
+
+
+
+              <!-- Projects --> <section>
+          
+          <h2 class="section-title">Projects</h2> 
+          
+          <ul id="protext"> 
+            
+            <li><strong id="name1text">AI-Powered Chatbot</strong> —  <span id="namef1text"> Python & Dialogflow, WhatsApp integration</span></li>
+
+            <li><strong id="name2text">E-Commerce Web App</strong> —   <span id="namef2text">React, Node.js, MongoDB</span></li>
+            
+            <li><strong id="name3text">Portfolio Website</strong> —    <span id="namef3text">Responsive design, GitHub Pages</span></li>
+
+            <li><strong id="name4text">Resume Website</strong> —    <span id="namef4text">Responsive design,free, GitHub Pages</span></li>
+          
+          </ul>
+          </section> 
+
+
+
+
+
+
+
+
+         
+        <!-- Publications --> <section>
+            
+            <h2 class="section-title">Publications</h2> 
+            
+            <ul id="pubtext"> 
+              
+              <li>“Efficient Algorithms for Graph Analysis”, IJCA, 2022</li>
+              
+              
+              <li>“AI in Healthcare: Opportunities and Challenges”, IEEE Conf, 2021</li> </ul> </section>
+            
+            <!-- Skills -->
+             
+            <section>
+               <h2 class="section-title">Skills</h2>
+                <p ><strong>Languages:</strong> 
+                  <span id="skillLangtext"> Python, Java, C++, JavaScript</span>  </p>
+                
+                <p><strong>Frameworks:</strong> <span id="framtext">React, Node.js, Flask, Django</span> </p>
+                
+                <p><strong>Tools:</strong> <span id="tooltext">Git, Docker, Kubernetes, MySQL, MongoDB</span> </p>
+              
+              </section> 
+            
+            
+      
+
+        </div> </div> </div> </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+
+        
+        <script >
+
+
+document.getElementById("btn").addEventListener("click", () => {
+  const resume = document.querySelector(".paper");
+
+  if (!resume) {
+    alert("Resume not found!");
+    return;
+  }
+
+  const clone = resume.cloneNode(true);
+  clone.style.position = "relative";  
+  clone.style.right = "auto";
+  clone.style.top = "auto";
+  clone.style.bottom = "auto";
+  clone.style.margin = "-8% -5%";
+  clone.style.boxShadow = "none";
+  clone.style.width = "210mm";   // force A4 width
+  clone.style.minHeight = "297mm";
+
+  document.body.appendChild(clone);
+
+  const opt = {
+    margin:       [10,10,10,10],
+    filename:     'resume.pdf',
+    image:        { type: 'jpeg', quality: 0.98 },
+    html2canvas:  { scale: 1, useCORS: true, scrollY: 0 },
+    jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' },
+    pagebreak:    { mode: ['css', 'legacy'] }   // ✅ fix cutoff
+  };
+
+  html2pdf().set(opt).from(clone).save().then(() => {
+    document.body.removeChild(clone);
+  });
+});
+ 
+
+// let nameInput =document.getElementById("nameInput");
+// let nameText = document.getElementById("nameText");
+
+// nameInput.oninput=function() {
+//   if(nameInput.value === ""){
+//     nameText.textContent   ="Alex Johnson";
+//   }
+//   else{
+//     nameText.textContent=nameInput.value
+//   }
+// }
+
+
+  // NAME
+  let nameInput = document.getElementById("nameInput");
+  let nameText = document.getElementById("nameText");
+
+  nameInput.oninput = function() {
+    if (nameInput.value === "") {
+      nameText.textContent = "Alex Johnson";
+    } else {
+      nameText.textContent = nameInput.value;
+    }
+  }
+
+  // LOCATION
+  let locationInput = document.getElementById("locationInput");
+  let locationText = document.getElementById("locationText");
+
+  locationInput.oninput = function() {
+    if (locationInput.value === "") {
+      locationText.textContent = "New Delhi, India";
+    } else {
+      locationText.textContent = locationInput.value;
+    }
+  }
+
+  // PHONE
+  let phoneInput = document.getElementById("phoneInput");
+  let phoneText = document.getElementById("phoneText");
+
+  phoneInput.oninput = function() {
+    if (phoneInput.value === "") {
+      phoneText.textContent = "+91 98765 43210";
+    } else {
+      phoneText.textContent = phoneInput.value;
+    }
+  }
+
+  // EMAIL
+  let emailInput = document.getElementById("emailInput");
+  let emailText = document.getElementById("emailText");
+
+  emailInput.oninput = function() {
+    if (emailInput.value === "") {
+      emailText.textContent = "alex@email.com";
+      emailText.href = "mailto:alex@email.com";
+    } else {
+      emailText.textContent = emailInput.value;
+      emailText.href = "mailto:" + emailInput.value;
+    }
+  }
+
+  // LINKEDIN
+  let linkedinInput = document.getElementById("linkedinInput");
+  let linkedinText = document.getElementById("linkedinText");
+
+  linkedinInput.oninput = function() {
+    if (linkedinInput.value === "") {
+      linkedinText.textContent = "linkedin.com/in/username";
+      linkedinText.href = "#";
+    } else {
+      linkedinText.textContent = linkedinInput.value;
+      linkedinText.href = linkedinInput.value;
+    }
+  }
+
+  // GITHUB
+  let githubInput = document.getElementById("githubInput");
+  let githubText = document.getElementById("githubText");
+
+  githubInput.oninput = function() {
+    if (githubInput.value === "") {
+      githubText.textContent = "github.com/username";
+      githubText.href = "#";
+    } else {
+      githubText.textContent = githubInput.value;
+      githubText.href = githubInput.value;
+    }
+  }
+
+
+//   laterdsfg
+
+
+
+
+
+  // PROFILE
+  let profileInput = document.getElementById("profileInput");
+  let profileText = document.getElementById("profileText");
+
+  profileInput.oninput = function() {
+    profileText.textContent = profileInput.value || 
+      "Passionate software developer with a focus on building scalable, efficient, and user-friendly applications.";
+  }
+
+  // EDUCATION
+// EDUCATION
+let eduDateInput = document.getElementById("eduDateInput");
+let eduDateText = document.getElementById("eduDate1"); // FIXED
+eduDateInput.oninput = function() {
+  eduDateText.textContent = eduDateInput.value || "2019 – 2023";
+}
+
+let eduTitleInput = document.getElementById("eduTitleInput");
+let eduTitleText = document.getElementById("eduTitle1"); // FIXED
+eduTitleInput.oninput = function() {
+  eduTitleText.textContent = eduTitleInput.value || "B.Tech in Computer Science, Delhi Institute of Technology";
+}
+
+let eduGPAInput = document.getElementById("eduGPAInput");
+let eduGPAText = document.getElementById("eduGPA"); // FIXED
+eduGPAInput.oninput = function() {
+  eduGPAText.textContent = eduGPAInput.value || "GPA: 8.6/10";
+}
+
+let eduCoursesInput = document.getElementById("eduCoursesInput");
+let eduCoursesText = document.getElementById("eduCourses"); // FIXED
+eduCoursesInput.oninput = function() {
+  eduCoursesText.textContent = eduCoursesInput.value || "Coursework: Data Structures, Machine Learning, etc.";
+}
+
+
+  // EXPERIENCE (example only for 1 job, repeat for others)
+// EXPERIENCE 1
+let expDate1Input = document.getElementById("expDate1Input");
+let expDate1Text = document.getElementById("expDate1"); // FIXED
+expDate1Input.oninput = function() {
+  expDate1Text.textContent = expDate1Input.value || "2023 – Present";
+}
+
+let expTitle1Input = document.getElementById("expTitle1Input");
+let expTitle1Text = document.getElementById("expTitle1"); // FIXED
+expTitle1Input.oninput = function() {
+  expTitle1Text.textContent = expTitle1Input.value || "Software Engineer — Google, Bangalore";
+}
+
+let expBullets1Input = document.getElementById("expBullets1Input");
+let expBullets1Text = document.getElementById("expBullets1"); // FIXED
+expBullets1Input.oninput = function() {
+  let lines = expBullets1Input.value.split("\n");
+  expBullets1Text.innerHTML = lines.map(line => `<li>${line}</li>`).join("") 
+    || "<li>Optimized API response times by 40%</li><li>Built internal dashboards with React.js</li><li>Automated CI/CD pipelines</li>";
+}
+
+
+// EXPERIENCE 2
+let expDate2Input = document.getElementById("exp2Date2Input");
+let expDate2Text = document.getElementById("exp2Date2"); // FIXED
+expDate2Input.oninput = function() {
+  expDate2Text.textContent = expDate2Input.value || "Summer 2022";
+}
+
+let expTitle2Input = document.getElementById("exp2Title2Input");
+let expTitle2Text = document.getElementById("exp2Title2"); // FIXED
+expTitle2Input.oninput = function() {
+  expTitle2Text.textContent = expTitle2Input.value || "Software Engineer Intern — Infosys, Pune";
+}
+
+let expBullets2Input = document.getElementById("exp2Bullets2Input");
+let expBullets2Text = document.getElementById("exp2Bullets2"); // FIXED
+expBullets2Input.oninput = function() {
+  let lines = expBullets2Input.value.split("\n");
+  expBullets2Text.innerHTML = lines.map(line => `<li>${line}</li>`).join("") 
+    || "<li>Designed reusable UI components in Angular</li><li>Improved load times by 30%</li><li>Increased test coverage from 65% to 90%</li>";
+}
+
+
+// project  sds
+
+// name  
+ let name1inp=document.getElementById("name1inp");
+ let name1text=document.getElementById("name1text");
+
+ name1inp.oninput=function(){
+
+  name1text.textContent=name1inp.value;
+ }
+// feature  
+  let namef1inp=document.getElementById("namef1inp");
+ let namef1text=document.getElementById("namef1text");
+
+ namef1inp.oninput=function(){
+
+  namef1text.textContent=namef1inp.value;
+ }
+
+
+
+
+
+
+
+ // name  2
+ let name2inp=document.getElementById("name2inp");
+ let name2text=document.getElementById("name2text");
+
+ name2inp.oninput=function(){
+
+  name2text.textContent=name2inp.value;
+ }
+// feature  
+  let namef2inp=document.getElementById("namef2inp");
+ let namef2text=document.getElementById("namef2text");
+
+ namef2inp.oninput=function(){
+
+  namef2text.textContent=namef2inp.value;
+ }
+
+
+  // name  3
+ let name3inp=document.getElementById("name3inp");
+ let name3text=document.getElementById("name3text");
+
+ name3inp.oninput=function(){
+
+  name3text.textContent=name3inp.value;
+ }
+// feature  
+  let namef3inp=document.getElementById("namef3inp");
+ let namef3text=document.getElementById("namef3text");
+
+ namef3inp.oninput=function(){
+
+  namef3text.textContent=namef3inp.value;
+ }
+
+
+
+
+  // name  44
+ let name4inp=document.getElementById("name4inp");
+ let name4text=document.getElementById("name4text");
+
+ name4inp.oninput=function(){
+
+  name4text.textContent=name4inp.value;
+ }
+// feature  
+  let namef4inp=document.getElementById("namef4inp");
+ let namef4text=document.getElementById("namef4text");
+
+ namef4inp.oninput=function(){
+
+  namef4text.textContent=namef4inp.value;
+ }
+
+
+/// publication 
+
+let pubInput = document.getElementById("pubInput");
+let pubtext = document.getElementById("pubtext"); // FIXED
+pubInput.oninput = function() {
+  let lines = pubInput.value.split("\n");
+  pubtext.innerHTML = lines.map(line =>
+  `<li>${line}</li>`).join("") 
+    || "<li>Designed reusable UI components in Angular</li><li>Improved load times by 30%</li><li>Increased test coverage from 65% to 90%</li>";
+}
+
+
+// skillssss
+
+let skillLangInput=document.getElementById("skillLangInput");
+let skillLangText=document.getElementById("skillLangtext");
+
+skillLangInput.oninput=function(){
+  skillLangText.textContent=skillLangInput.value
+}
+
+
+
+let frameinp= document.getElementById("frameinp");
+let frametext= document.getElementById("framtext");
+frameinp.oninput =function(){
+
+  frametext.textContent=frameinp.value
+}
+
+
+// tools
+let toolinp= document.getElementById("toolinp");
+let tooltext= document.getElementById("tooltext");
+toolinp.oninput =function(){
+
+  tooltext.textContent=toolinp.value
+}
+
+</script>
+
+
+ 
+        
+        
+        </html>
