@@ -344,28 +344,37 @@
           
 
     .container {
-      position: static;
-      margin: 0;
+    display: block;
+    position: static;
+      margin-top: 660%;
+      margin-left: -57%;
 
-      width: 100%;
+      width: 340%;
       height: 100%;
       /* background-color: aqua; */
 
     }
 
-    /* Header */
-    .cv-header {
-      width: 100%;
-
-      
+     .cv-header {
+     width: 100%;
+     /* margin-left: 5%; */
     }
 
+    .left-header h1 {
+      font-size: 28px;
+      width: 50vh;
+    }
+
+
  
-  
+ 
+  body{
+    background-color: #0d47a1;
+  }
     /* form   */
 
  .form{
- width: 100%;
+ width: 200%;
 
 
  }  
@@ -378,9 +387,18 @@
 }
 
 .formall input {
+  width: 90%;
   padding-left: 5%;
-    margin-left: 12%;
+  margin-left: 15%;
+    
     font-size: 150%;
+}
+
+.formall h1{
+  width: 190%;
+  padding-top: 15%;
+  
+  background-color: #0d47a1;
 }
 
 #btn{
@@ -388,18 +406,20 @@
   height: 5vh;
   border-radius: 12vh;
   position:absolute;
-  margin-top: 408%;
-  margin-left: 28%;
+  margin-top: 628%;
+  margin-left: 45%;
   font-size: 4vw;}
  
 
 .heading{
-    font-size: 343%;
-    font-weight: 700;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  width: 180%;
+  background-color: #0d47a1;
+    font-size: 243%;
+   
 }
 
 .main{
+  width: 100%;
     padding-top: 2%;
     padding-left: 2%;
 }
@@ -510,11 +530,11 @@
           <input id="edate1inp" type="text" placeholder="Date">
         <br><br><br>
 
-          <label for="epoinp">Positon</label>
-          <input id="epoinp" type="text" placeholder="Positon">
+          <label for="epoinp">Course</label>
+          <input id="epoinp" type="text" placeholder="Course">
         <br><br><br>
 
-          <label for="epod1inp">Work Details</label>
+          <label for="epod1inp">Course Details</label>
           <input id="epod1inp" type="text" placeholder="summary">
         <br><br><br>
 

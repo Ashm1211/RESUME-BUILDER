@@ -15,7 +15,7 @@
             display: none;
             position: absolute;
             width: 40%;
-            height: 50%;
+            height: 70%;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
@@ -40,30 +40,58 @@
             width: 60%;
             height: 10%;
         }
+
+        @media (max-width: 768px) {
+                .auth-form {
+            /* display: none; */
+            /* position: absolute; */
+            width: 80%;
+            height: 50%;
+            padding-top: 5%;
+            top:50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgb(19, 94, 253);
+            color: aliceblue;
+            font-size: 200%;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            z-index: 1000;
+        }
+
+            .auth-form input, .auth-form button {
+            display: block;
+            margin: 5% 20%;
+            border-radius: 8vh;
+            font-size: 44%;
+            padding-left: 0%;
+        
+            /* margin: rem 0; */
+            width: 60%;
+            height: 10%;
+        }
+        }
     </style>
 </head>
 <body>
     
-    <div class="page1">  
+    <div class="page1" id="page1">  
         <div class="nav">
-            <div class="call">
-              <a href="phone"> 
-                <p>Call us: (+91)  932*5*544</p>
-            </a>
-            </div>
+            <!-- <div class="call">
+              <h1>Resume Builder</h1>
+            </div> -->
             <div class="mainnav">
              <div class="logo">
-                  <p>logo</p>
+                <img src="imges/ResumeBuilder-Logo-PNG.png" alt="">
+                  
              </div>
              <div class="midnav">
-                <p>Home</p>
-                <p>About us</p>
-                <p>Resumes</p>
-                <p>Selection Criteria</p>
+                <p id="homebtn">Home</p>
+                <p id="aboutusbtn">About us</p>
+                <p id="ResumeBtn">Resumes</p>
+                <!-- <p>Selection Criteria</p> -->
              </div>
-             <div class="iconmenu">
-                <!-- <i  class="ri-menu-line"></i> -->
-             </div>
+           
              <div class="navbtn">
                 <div class="log" id="loginBtn">Log in</div>
                 <div class="sign" id="signupBtn">Sign up</div>
@@ -106,15 +134,14 @@
                     <div class="btntem3">Click to use</div>
                 </a>
             </div>
-            <div class="page7">
+            <div class="page7" id="page7">
                 <div class="p71">
                     <p class="p71p1">Resume Builder</p>
                     <p class="p71p2">Select your template </p>
                 </div>
                 <div class="p73">
-                    <p class="p73p1">Facebook</p>
-                    <p class="p73p1">Instagram</p>
-                    <p class="p73p1">Whats App</p>
+                    <p>Whether you want to build a new CV from scratch or improve an existing one, let us help you present your work life, personality, and skills on a CV that stands out</p>
+                  
                 </div>
                 <hr>
                 <div class="p72">
@@ -150,6 +177,24 @@
     </div>
 
     <script>
+
+
+        // home btn 
+
+         document.getElementById("homebtn").addEventListener("click", function() {
+            document.getElementById("page1").scrollIntoView({ behavior: "smooth" });
+        });
+        // about us btn 
+
+         document.getElementById("aboutusbtn").addEventListener("click", function() {
+            document.getElementById("page7").scrollIntoView({ behavior: "smooth" });
+        });
+
+        // resume btn nav 
+         document.getElementById("ResumeBtn").addEventListener("click", function() {
+            document.getElementById("page2").scrollIntoView({ behavior: "smooth" });
+        });
+        //create my resume btn
         document.getElementById("createResumeBtn").addEventListener("click", function() {
             document.getElementById("page2").scrollIntoView({ behavior: "smooth" });
         });
@@ -199,9 +244,10 @@
         });
 
         // --- LOGIN LOGIC ---
-        document.getElementById('loginSubmit').addEventListener('click', async () => {
+       let log= document.getElementById('loginSubmit').addEventListener('click', async () => {
             const email = document.getElementById('logEmail').value;
             const password = document.getElementById('logPassword').value;
+            
 
             try {
                 const response = await fetch('http://localhost:3001/api/login', {
