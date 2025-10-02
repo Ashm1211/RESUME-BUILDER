@@ -417,7 +417,7 @@ Improved load times by 30%"></textarea>
 
 <br><br>
 <label for="frameinp">Frameworks</label>
-<input type="text" name="" id="frameinp " placeholder="Frameworks">
+<input type="text" name="" id="frameinp" placeholder="Frameworks">
 
 <br><br>
 
@@ -448,7 +448,7 @@ Improved load times by 30%"></textarea>
                   
                   <div class="contact">
                     <span id="locationText">New Delhi, India</span> | <a id="emailText" href="mailto:alex.johnson@email.com">alex.johnson@email.com</a> 
-                    | <span id="phoneText">+91 98765 43210</span> | <a id="websiteText" href="https://alexjohnson.dev">alexjohnson.dev</a> | <a id="linkedinText" href="https://linkedin.com/in/alexjohnson">linkedin.com/in/alexjohnson</a> | <a id="githubText" href="https://github.com/alexjohnson">github.com/alexjohnson</a> </div> </header> <!-- Profile --> <section> <h2 class="section-title">Profile</h2> <p id="profileText">Passionate software developer with a focus on building scalable, efficient, and user-friendly applications. Strong background in problem solving, algorithms, and real-world project delivery.</p> </section>
+                    | <span id="phoneText">+91 98765 43210</span>  <a id="linkedinText" href="https://linkedin.com/in/alexjohnson">linkedin.com/in/alexjohnson</a> | <a id="githubText" href="https://github.com/alexjohnson">github.com/alexjohnson</a> </div> </header> <!-- Profile --> <section> <h2 class="section-title">Profile</h2> <p id="profileText">Passionate software developer with a focus on building scalable, efficient, and user-friendly applications. Strong background in problem solving, algorithms, and real-world project delivery.</p> </section>
         
         <!-- Education --> <section> <h2 class="section-title">Education</h2>
             
@@ -505,7 +505,7 @@ Improved load times by 30%"></textarea>
                 <p ><strong>Languages:</strong> 
                   <span id="skillLangtext"> Python, Java, C++, JavaScript</span>  </p>
                 
-                <p><strong>Frameworks:</strong> <span id="framtext">React, Node.js, Flask, Django</span> </p>
+                <p><strong>Frameworks:</strong> <span id="frametext">React, Node.js, Flask, Django</span> </p>
                 
                 <p><strong>Tools:</strong> <span id="tooltext">Git, Docker, Kubernetes, MySQL, MongoDB</span> </p>
               
@@ -841,7 +841,7 @@ skillLangInput.oninput=function(){
 
 
 let frameinp= document.getElementById("frameinp");
-let frametext= document.getElementById("framtext");
+let frametext= document.getElementById("frametext");
 frameinp.oninput =function(){
 
   frametext.textContent=frameinp.value

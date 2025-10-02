@@ -468,7 +468,7 @@
              
 <br><br>
           <label for="expInput"><h1 style="font-size: 120%;">Publications</h1></label>
-          <textarea style="max-width: 60%; width: 40% ; height: 10vh; margin-left: 4%; margin-top:2% ;" name="" id="expInput"></textarea>
+          <textarea style="max-width: 60%; width: 40% ; height: 10vh; margin-left: 4%; margin-top:2% ;max-height: 70%;" name="" id="expInput"></textarea>
         <br><br>
 
 <br><br>
@@ -514,30 +514,31 @@
 <br><br><br>
 
         <!-- 1 -->
-          <label for="cer1inp">Certificate 1</label>
-          <input id="cer1inp" type="text" placeholder="Certificate">
+          <label for="cinp">Certificate 1</label>
+          <input id="cinp" type="text" placeholder="Certificate">
 <br><br><br>
           
-          <label for="sou1inp">source 1</label>
-          <input id="sou1inp" type="text" placeholder="sourse ">  
+          <label for="sinp">source 1</label>
+          <input id="sinp" type="text" placeholder="sourse ">  
 <br><br><br>
 
 
           <!-- 2 -->
 
-            <label for="cer2inp">Certificate</label>
-          <input id="cer2inp" type="text" placeholder="Certificate">
+            <label for="c2inp">Certificate</label>
+          <input id="c2inp" type="text" placeholder="Certificate">
 <br><br><br>
           
-          <label for="sou2inp">source </label>
-          <input id="sou2inp" type="text" placeholder="sourse ">  
+          <label for="s2inp">source </label>
+          <input id="s2inp" type="text" placeholder="sourse ">  
           <!-- 3rd  -->
 <br><br><br>
 
-             <label for="cer3inp">Certificate</label>
-          <input id="cer3inp" type="text" placeholder="Certificate">
+             <label for="c3inp">Certificate</label>
+          <input id="c3inp" type="text" placeholder="Certificate">
 <br><br><br>
-          
+          <label for="s3inp">Source 3</label>
+<input id="s3inp" type="text" placeholder="Source">
        
 <br><br><br>
 
@@ -546,7 +547,7 @@
           <h1>Hobbies</h1>
 
 <label for="hobinp">Enter your Hobbies</label><br><br>
-<textarea name="" id="hobinp" placeholder="Hobbies"></textarea>
+<textarea style="margin-left: 5%; width: 30%; height: 50%; max-width: 80%; max-height: 70%;" name="" id="hobinp" placeholder="Hobbies"></textarea>
 
 <br><br><br>
 
@@ -638,18 +639,26 @@
                 <span class="dates" id="edate1text">2007--2010</span>
             </div>
 
+
+            <!--  -->
             <div class="head-right">Certifications</div>
+          
             <div class="certification-item">
-                <div class="smaller"><span class="degree-title" id="cer1text">Introduction to Data Analysis using Microsoft Excel,</span> <span class="university"><i id="sou1text">Coursera.</i></span></div>
+               
+              <div class="smaller" ><span class="degree-title" id="ctext">Introduction to Data Analysis using Microsoft Excel,</span> <span class="university" id="stext"> Coursera.</span></div>
             </div>
             <div class="certification-item">
-                <div class="smaller"><span class="degree-title" id="cer2text">Data Analysis With Python,Cognitive Class DA0101EN,</span> <span class="university"><i id="sou2text">provided by IBM.</i></span>
-                    <span class="dates">July-3-2024</span>
+                <div class="smaller"><span class="degree-title" id="c2text">Data Analysis With Python,Cognitive Class DA0101EN,</span> <span class="university" id="s2text">provided by IBM.</span>
+                
                 </div>
             </div>
-            <div class="certification-item">
-                <div class="smaller"><span class="degree-title" id="cer3text">SQL, Hacker Rank <i id="sou3text">provided by IBM.</i></span></div>
-            </div>
+           <div class="certification-item">
+    <div class="smaller">
+        <span class="degree-title" id="c3text">SQL, Hacker Rank,</span>
+        <span class="university" id="s3text">provided by IBM.</span>
+    </div>
+</div>
+
 
             <div class="head-right">Hobbies</div>
             <div class="hobbies-item">
@@ -710,6 +719,65 @@ uploadInput.addEventListener('change', function() {
         reader.readAsDataURL(file);
     }
 });
+
+ var cinp=document.getElementById("cinp");
+  var ctext=document.getElementById("ctext");
+
+  cinp.oninput=function(){
+    
+    ctext.textContent=cinp.value;
+
+  }
+
+   var sinp=document.getElementById("sinp");
+  var stext=document.getElementById("stext");
+
+  sinp.oninput=function(){
+    
+    stext.textContent=sinp.value;
+
+  }
+  
+ var c2inp=document.getElementById("c2inp");
+  var c2text=document.getElementById("c2text");
+
+  c2inp.oninput=function(){
+    
+    c2text.textContent=c2inp.value;
+}
+
+ var s2inp=document.getElementById("s2inp");
+  var s2text=document.getElementById("s2text");
+
+  s2inp.oninput=function(){
+    
+    s2text.textContent=s2inp.value;
+
+  }
+// 3
+ var c3inp=document.getElementById("c3inp");
+  var c3text=document.getElementById("c3text");
+
+  c3inp.oninput=function(){
+    
+    c3text.textContent=c3inp.value;
+}
+ var s3inp=document.getElementById("s3inp");
+  var s3text=document.getElementById("s3text");
+
+  s3inp.oninput=function(){
+    
+    s3text.textContent=s3inp.value;
+
+  }
+
+
+  
+   var hobinp=document.getElementById("hobinp");
+  var hobtext=document.getElementById("hobtext");
+
+  hobinp.oninput=function(){
+    hobtext.textContent=hobinp.value;}
 
 // namev / 
 
@@ -935,50 +1003,10 @@ expBullets2Input.oninput = function () {
 
 
 
-// certfication  
 
-// 1
-  var cer1inp=document.getElementById("cer1inp");
-  var cer1text=document.getElementById("cer1text");
-
-  cer1inp.oninput=function(){
-    cer1text.textContent=cer1inp.value;}
-
-    var sou1inp=document.getElementById("sou1inp");
-  var sou1text=document.getElementById("sou1text");
-
-  sou1inp.oninput=function(){
-    sou1text.textContent=sou1inp.value;}
-// 2nd 
-
- var cer2inp=document.getElementById("cer2inp");
-  var cer2text=document.getElementById("cer2text");
-
-  cer2inp.oninput=function(){
-    cer2text.textContent=cer2inp.value;}
-
-    var sou2inp=document.getElementById("sou2inp");
-  var sou2text=document.getElementById("sou2text");
-
-  sou2inp.oninput=function(){
-    sou2text.textContent=sou2inp.value;}
-
-
-    // 3rd 
-
-     var cer3inp=document.getElementById("cer3inp");
-  var cer3text=document.getElementById("cer3text");
-
-  cer3inp.oninput=function(){
-    cer3text.textContent=cer3inp.value;}
 
 //    hobibiess
 
-   var hobinp=document.getElementById("hobinp");
-  var hobtext=document.getElementById("hobtext");
-
-  hobinp.oninput=function(){
-    hobtext.textContent=hobinp.value;}
 
 
     </script>
